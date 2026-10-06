@@ -1,0 +1,462 @@
+{
+  "id": "b1-lesen-09",
+  "examNumber": 9,
+  "title": "Übungssatz 09: Sprachkurse, Auslandserfahrung & Praktika",
+  "theme": "Sprachkurse & Auslandsaufenthalte",
+  "status": "Ready",
+  "updatedAt": "2026-09-28T09:40:00Z",
+  "styleConfig": {
+    "fontFamily": "Source Sans 3",
+    "baseFontSizePt": 10,
+    "lineHeight": 1.4,
+    "headerBarColor": "#d9d9d9",
+    "headerTextColor": "#000000",
+    "accentColor": "#d97706",
+    "marginPreset": "normal"
+  },
+  "candidateInfo": {
+    "institution": "Goethe-Institut Stuttgart",
+    "city": "Stuttgart",
+    "examType": "Erwachsene",
+    "centerCode": "DE-BW-99432"
+  },
+  "teil1": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?",
+    "sourceContext": "Manuel schreibt seiner ehemaligen Deutschlehrerin Frau Schneider über sein Praktikum in Wien.",
+    "emailGreeting": "Sehr geehrte Frau Schneider,",
+    "emailBody": "ich wollte mich schon lange bei Ihnen melden und mich noch einmal herzlich für Ihre tolle Vorbereitung auf die B1-Prüfung im letzten Sommer bedanken! Sie hatten mir damals geraten, nach dem Sprachzertifikat unbedingt praktische Berufserfahrung im deutschsprachigen Raum zu sammeln.\n\nSeit zwei Monaten mache ich nun ein bezahltes Praktikum in einer internationalen Marketingagentur im Zentrum von Wien. Am ersten Arbeitstag hatte ich große Angst, dass ich die österreichischen Kolleginnen und Kollegen wegen des Dialekts und der vielen speziellen Begriffe nicht verstehen würde. Wörter wie „Jause“, „Topfen“ oder „Paradeiser“ kannte ich aus dem Unterricht natürlich noch nicht!\n\nAber das gesamte Team ist unglaublich freundlich und geduldig. Wenn ich eine Frage zu einer E-Mail habe oder eine Formulierung unsicher klingt, schaut meine Mentorin Susanne kurz drüber und gibt mir wertvolle Tipps. Inzwischen telefoniere ich sogar schon ganz selbstverständlich auf Deutsch mit unseren Kunden in Salzburg und Linz.\n\nAbends wohne ich in einem Studentenheim in der Nähe des Praters. Mit meinen Mitbewohnern kochen wir oft zusammen und sprechen nur Deutsch. Mein Wortschatz hat sich in diesen acht Wochen mehr erweitert als in einem halben Jahr Lehrbuchlernen!\n\nIch wünsche Ihnen für Ihre neuen Deutschkurse in Stuttgart alles Gute.\n\nHerzliche Grüße\nManuel Gomez",
+    "emailSignoff": "Herzliche Grüße\nManuel Gomez",
+    "authorLocation": "Wien",
+    "beispiel": {
+      "statement": "Manuel hat die B1-Prüfung bei Frau Schneider vorbereitet.",
+      "answer": "Richtig"
+    },
+    "items": [
+      {
+        "id": "e9-t1-1",
+        "number": 1,
+        "statement": "Manuel erhält für seine Arbeit bei der Wiener Agentur kein Geld.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e9-t1-2",
+        "number": 2,
+        "statement": "Am Anfang bereitete der österreichische Wortschatz Manuel ein paar Sorgen.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e9-t1-3",
+        "number": 3,
+        "statement": "Manuels Kollegen reagieren ungeduldig, wenn er Fehler im Deutschen macht.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e9-t1-4",
+        "number": 4,
+        "statement": "Manuel führt mittlerweile geschäftliche Telefonate auf Deutsch.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e9-t1-5",
+        "number": 5,
+        "statement": "In seiner Unterkunft spricht Manuel mit den Mitbewohnern nur Englisch.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e9-t1-6",
+        "number": 6,
+        "statement": "Manuel findet, dass die Zeit in Wien seinen Sprachkenntnissen sehr geholfen hat.",
+        "correctAnswer": "Richtig"
+      }
+    ]
+  },
+  "teil2": {
+    "workTimeMinutes": 20,
+    "instruction": "Lesen Sie den Text aus der Presse und die Aufgaben dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "textA": {
+      "title": "Erasmus+: Mehr als nur Party",
+      "kicker": "Studie belegt enormen Karriereschub durch Auslandssemester",
+      "source": "aus einer deutschen Hochschulzeitung",
+      "bodyParagraphs": [
+        "Über dreizehn Millionen Europäer haben seit 1987 mit dem EU-Programm „Erasmus“ im Ausland studiert oder ein Praktikum absolviert. Eine neue europaweite Erhebung der Universität Heidelberg zeigt nun: Ein Auslandsaufenthalt während der Ausbildung verändert nicht nur die Persönlichkeit nachhaltig, sondern eröffnet handfeste Karrierevorteile.",
+        "Absolventen mit Auslandserfahrung finden im Schnitt doppelt so schnell eine Festanstellung wie Absolventen ohne internationale Mobilität. Sie verfügen über höhere interkulturelle Kompetenz, flexibleres Problemlösungsverhalten und fließende Fremdsprachenkenntnisse.",
+        "„Viele Studierende fürchten zunächst den bürokratischen Aufwand für die Anerkennung von Studienleistungen“, erläutert Programmkoordinator Dr. Stefan Wolf. Dank digitalisierter Lernvereinbarungen und einheitlicher Kreditpunkte (ECTS) laufe die Anerkennung an den Heimatuniversitäten heute jedoch reibungslos."
+      ],
+      "beispiel": {
+        "question": "Das europäische Austauschprogramm Erasmus ...",
+        "options": {
+          "a": "wurde erst vor zwei Jahren gegründet.",
+          "b": "hat Millionen von Studierenden gefördert.",
+          "c": "gilt nur für Medizinstudenten."
+        },
+        "answer": "b"
+      },
+      "items": [
+        {
+          "id": "e9-t2-7",
+          "number": 7,
+          "question": "Laut der Heidelberger Studie ...",
+          "options": {
+            "a": "haben Erasmus-Teilnehmer später deutlich bessere Berufschancen.",
+            "b": "brauchen Absolventen mit Auslandserfahrung länger bei der Jobsuche.",
+            "c": "lohnt sich ein Auslandssemester nur bei perfekten Noten."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e9-t2-8",
+          "number": 8,
+          "question": "Welche Fähigkeiten schätzen Arbeitgeber bei Auslandserfahrenen besonders?",
+          "options": {
+            "a": "Geringere Gehaltsforderungen.",
+            "b": "Gute Fremdsprachenkenntnisse und Flexibilität.",
+            "c": "Verzicht auf Urlaubstage im ersten Jahr."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e9-t2-9",
+          "number": 9,
+          "question": "Die Anerkennung von Studiennoten aus dem Ausland ...",
+          "options": {
+            "a": "wird heute durch digitale ECTS-Punkte erleichtert.",
+            "b": "ist an deutschen Hochschulen grundsätzlich verboten.",
+            "c": "kostet jedes Mal mehrere hundert Euro Gebühren."
+          },
+          "correctAnswer": "a"
+        }
+      ]
+    },
+    "textB": {
+      "title": "Sprachen lernen im Tandem",
+      "kicker": "Zürcher Universität bringt Sprachlerner partnerschaftlich zusammen",
+      "source": "aus einer Schweizer Bildungszeitschrift",
+      "bodyParagraphs": [
+        "Warum teures Geld für Sprachschulen ausgeben, wenn man Sprachen auch im lockeren Zweiergespräch lernen kann? Das Sprachenzentrum der Universität Zürich vermittelt Tandem-Partnerschaften: Eine Person, deren Muttersprache Deutsch ist, trifft sich regelmäßig mit jemandem, der Deutsch lernt und eine andere Muttersprache spricht.",
+        "Die Grundregel des Tandems lautet strikte Gleichberechtigung: Eine Stunde wird in der einen Sprache gesprochen, die nächste Stunde in der anderen. Niemand ist professioneller Lehrer, aber jeder korrigiert den Partner freundlich und hilft beim Finden passender Wörter.",
+        "„Im Café oder beim Spaziergang am See verliert man die Scheu vor dem freien Sprechen viel schneller als im traditionellen Frontalunterricht“, berichtet Sprachpädagogin Claudia Meier."
+      ],
+      "items": [
+        {
+          "id": "e9-t2-10",
+          "number": 10,
+          "question": "Beim Sprachtandem an der Universität Zürich ...",
+          "options": {
+            "a": "unterrichten nur ausgebildete Universitätsprofessoren.",
+            "b": "lernen zwei Personen gegenseitig die Sprache des anderen.",
+            "c": "muss man für jede Stunde eine feste Prüfungsgebühr zahlen."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e9-t2-11",
+          "number": 11,
+          "question": "Welche Regel gilt für ein Sprachtandem?",
+          "options": {
+            "a": "Beide Sprachen werden zu gleichen Zeitanteilen gesprochen.",
+            "b": "Man darf während des Treffens keine Fehler korrigieren.",
+            "c": "Es darf nur schriftlich per E-Mail kommuniziert werden."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e9-t2-12",
+          "number": 12,
+          "question": "Laut Claudia Meier hilft das Tandem vor allem dabei, ...",
+          "options": {
+            "a": "schwere Grammatikregeln auswendig zu lernen.",
+            "b": "die Angst vor dem freien Sprechen abzubauen.",
+            "c": "schnell eine Wohnung in Zürich zu mieten."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    }
+  },
+  "teil3": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen A bis J aus verschiedenen deutschsprachigen Medien. Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall schreiben Sie 0.",
+    "contextDescription": "Personen suchen nach Angeboten für Sprachkurse, Auslandserfahrung und Au-pair.",
+    "beispiel": {
+      "situation": "Julia sucht eine Au-pair-Familie in Frankreich für ein ganzes Schuljahr.",
+      "answer": "c"
+    },
+    "situations": [
+      {
+        "id": "e9-t3-13",
+        "number": 13,
+        "situation": "Matthias möchte in den Sommerferien einen zweiwöchigen Intensiv-Deutschkurs in München besuchen.",
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e9-t3-14",
+        "number": 14,
+        "situation": "Carola sucht bezahlte Praktikumsplätze für Studierende im Hotelgewerbe in Österreich.",
+        "correctAnswer": "f"
+      },
+      {
+        "id": "e9-t3-15",
+        "number": 15,
+        "situation": "Stefan möchte einen Vorbereitungskurs für den TestDaF an den Samstagen belegen.",
+        "correctAnswer": "d"
+      },
+      {
+        "id": "e9-t3-16",
+        "number": 16,
+        "situation": "Nadia sucht ein Highschool-Austauschjahr für ihre 15-jährige Tochter in Kanada.",
+        "correctAnswer": "0"
+      },
+      {
+        "id": "e9-t3-17",
+        "number": 17,
+        "situation": "David möchte am Wochenende an einem Sprachtandem-Treffen in einem Stuttgarter Café teilnehmen.",
+        "correctAnswer": "g"
+      },
+      {
+        "id": "e9-t3-18",
+        "number": 18,
+        "situation": "Lena möchte medizinisches Fachdeutsch für ausländische Ärztinnen und Ärzte lernen.",
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e9-t3-19",
+        "number": 19,
+        "situation": "Alexander sucht eine geförderte Freiwilligenarbeit im Naturschutz in Costa Rica.",
+        "correctAnswer": "h"
+      }
+    ],
+    "unusedAdLetter": "e",
+    "advertisements": [
+      {
+        "id": "ad-9a",
+        "letter": "a",
+        "title": "Sommer-Intensivkurse Deutsch in München",
+        "body": "2 bis 4 Wochen Vollzeitunterricht (25 Std./Woche) auf den Niveaustufen A1 bis C1. Inklusive spannendem Kulturprogramm: Schloss Neuschwanstein, Biergarten-Tour und Museen.",
+        "contact": "www.deutsch-sommer-muenchen.de | info@dsm.de",
+        "rotationDeg": 1.2
+      },
+      {
+        "id": "ad-9b",
+        "letter": "b",
+        "title": "Deutsch für Mediziner & Pflegekräfte",
+        "body": "Gezieltes Kommunikationstraining für Klinik und Praxis: Anamneseerhebung, Arztbriefe und Patientengespräche. Vorbereitung auf die Fachsprachenprüfung der Ärztekammer.",
+        "contact": "medizin-deutsch@spracheninstitut-sued.de",
+        "rotationDeg": -1.4
+      },
+      {
+        "id": "ad-9c",
+        "letter": "c",
+        "title": "Beispiel: Au-Pair Vermittlung Frankreich",
+        "body": "Lebe 10 bis 12 Monate bei einer geprüften Gastfamilie in Paris oder Lyon! Freie Kost und Logis, Taschengeld und Sprachkurs. Für Jugendliche von 18 bis 26 Jahren.",
+        "contact": "www.aupair-france-service.com",
+        "rotationDeg": 0
+      },
+      {
+        "id": "ad-9d",
+        "letter": "d",
+        "title": "TestDaF Samstags-Intensivtraining",
+        "body": "Erfolgreich zum Hochschulzugang! Jeden Samstag von 9:00 bis 14:00 Uhr intensives Training aller Prüfungsteile unter Prüfungsbedingungen. Kleine Gruppen max. 10 Personen.",
+        "contact": "testdaf@sprachkolleg-stuttgart.de",
+        "rotationDeg": 0.8
+      },
+      {
+        "id": "ad-9e",
+        "letter": "e",
+        "title": "Wirtschaftsspanisch am Feierabend",
+        "body": "Verhandlungssicher im spanischsprachigen Markt. Kurs für Fach- und Führungskräfte donnerstags 19 Uhr.",
+        "contact": "anmeldung@vhs-wirtschaft.de",
+        "rotationDeg": -2.3
+      },
+      {
+        "id": "ad-9f",
+        "letter": "f",
+        "title": "Hotel- & Gastro-Praktika in den Tiroler Alpen",
+        "body": "Sammle Praxiserfahrung in renommierten 4- und 5-Sterne-Hotels in Österreich! Bezahlte Praktika (ab 1.100 € netto/Monat) inklusive Unterkunft und Verpflegung im Hotel.",
+        "contact": "www.alpen-hotel-karriere.at | Tel. +43-512-445522",
+        "rotationDeg": -0.7
+      },
+      {
+        "id": "ad-9g",
+        "letter": "g",
+        "title": "Sprach-Café Tandem Stuttgart",
+        "body": "Sprachen sprechen bei Cappuccino! Jeden Sonntag ab 15:00 Uhr im Kulturcafé Weltenbummler. Tische nach Sprachen aufgeteilt (Deutsch, Spanisch, Englisch, Französisch). Eintritt frei!",
+        "contact": "tandem-cafe@stuttgart-international.de",
+        "rotationDeg": 1.6
+      },
+      {
+        "id": "ad-9h",
+        "letter": "h",
+        "title": "EcoVolunteer Costa Rica: Regenwald schützen",
+        "body": "Hilf beim Schutz von Meeresschildkröten und der Wiederaufforstung im Nationalpark! 4 bis 12 Wochen Aufenthalt mit Gastfamilie. Gefördert über Weltwärts.",
+        "contact": "info@volunteer-regenwald.org",
+        "rotationDeg": -1.1
+      },
+      {
+        "id": "ad-9i",
+        "letter": "i",
+        "title": "Dolmetscher-Aufbaustudium Englisch/Deutsch",
+        "body": "Masterstudiengang Konferenzdolmetschen an der Universität Heidelberg. Eignungstest im Juni.",
+        "contact": "dolmetschen@uni-heidelberg.de",
+        "rotationDeg": 0.5
+      },
+      {
+        "id": "ad-9j",
+        "letter": "j",
+        "title": "Arabisch für den Urlaub: Crashkurs",
+        "body": "Grundlegende Redewendungen und Schriftzeichen an zwei Wochenenden. Keine Vorkenntnisse.",
+        "contact": "orient@sprachen-welt.de",
+        "rotationDeg": -1.7
+      }
+    ]
+  },
+  "teil4": {
+    "workTimeMinutes": 15,
+    "instruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für Englisch als alleinige Unterrichtssprache in Masterstudiengängen an deutschen Hochschulen? Ja oder Nein?",
+    "contextTopic": "In einer deutschen Wochenzeitung lesen Sie Beiträge zur Frage „Sollten alle universitären Masterstudiengänge ausschließlich auf Englisch unterrichtet werden?“",
+    "questionFraming": "Ist die Person für Englisch als alleinige Mastersprache?",
+    "beispiel": {
+      "author": "Hendrik",
+      "age": 47,
+      "city": "Mannheim",
+      "text": "Wissenschaft ist heute international. Wenn deutsche Universitäten die besten Forscher und Talente aus aller Welt anlocken wollen, geht das nur mit englischsprachigen Masterprogrammen. Deutsch als Hürde schreckt viele Spitzenleute ab.",
+      "answer": "Ja"
+    },
+    "leserbriefe": [
+      {
+        "id": "e9-t4-20",
+        "number": 20,
+        "author": "Cornelia",
+        "age": 53,
+        "city": "Tübingen",
+        "text": "Deutsch ist eine präzise Wissenschafts- und Kultursprache. Wer in Deutschland studiert, soll auch die Landessprache lernen. Wenn wir Deutsch an unseren eigenen Universitäten abschaffen, entwerten wir unsere eigene Sprache und Kultur.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e9-t4-21",
+        "number": 21,
+        "author": "Pascal",
+        "age": 24,
+        "city": "Karlsruhe",
+        "text": "In der Informatik und den Naturwissenschaften wird weltweit ohnehin nur noch auf Englisch publiziert. Es bereitet uns Studierende viel besser auf den globalen Arbeitsmarkt vor, wenn alle Fachbegriffe von Anfang an auf Englisch sitzen.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e9-t4-22",
+        "number": 22,
+        "author": "Monika",
+        "age": 62,
+        "city": "Heilbronn",
+        "text": "Viele deutsche Professoren und Studierende sprechen nur ein holpriges Schulenglisch. Die inhaltliche Tiefe und die Diskussionsqualität in den Seminaren leiden massiv darunter. Man sollte die Muttersprache nicht leichtfertig aufgeben.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e9-t4-23",
+        "number": 23,
+        "author": "Sven",
+        "age": 31,
+        "city": "Ulm",
+        "text": "Unsere Industrie leidet unter dramatischem Ingenieurmangel. Ein englischsprachiger Master ist der schnellste Weg, qualifizierte Fachkräfte aus Indien oder Lateinamerika ins Land zu holen, die danach hier arbeiten und Steuern zahlen.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e9-t4-24",
+        "number": 24,
+        "author": "Beate",
+        "age": 45,
+        "city": "Freiburg",
+        "text": "In Fächern wie Jura, Philosophie, Geschichte oder Germanistik ist die deutsche Sprache konstitutiv für den Inhalt. Eine pauschale Pflicht zu Englisch für alle Studiengänge ist völlig weltfremd und fachlich unsinnig.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e9-t4-25",
+        "number": 25,
+        "author": "Lars",
+        "age": 27,
+        "city": "Konstanz",
+        "text": "Ein englischsprachiger Masterabschluss öffnet Türen zu globalen Konzernen und UN-Organisationen weltweit. Warum sollten wir jungen Menschen diese internationale Karrierechance durch veraltete Sprachgrenzen verbauen?",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e9-t4-26",
+        "number": 26,
+        "author": "Dietmar",
+        "age": 58,
+        "city": "Pforzheim",
+        "text": "Internationale Studierende lernen oft kein einziges Wort Deutsch, wenn an der Uni alles auf Englisch läuft. Nach dem Studium verlassen sie Deutschland sofort wieder, weil sie sich im Alltag nicht integrieren können. Das hilft uns nicht.",
+        "correctAnswer": "Nein"
+      }
+    ]
+  },
+  "teil5": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "contextSituation": "Sie nehmen an einem Kurs an der Sprachschule „Sprachakademie Neckar“ teil und lesen die Schulordnung.",
+    "sheetTitle": "SCHUL- UND PRÜFUNGSORDNUNG DER SPRACHAKADEMIE NECKAR",
+    "sheetSubtitle": "Regelungen für den Unterrichtsbetrieb, Anwesenheit und Einstufung",
+    "sections": [
+      {
+        "title": "Anwesenheitspflicht & Fehlzeiten",
+        "content": "Für den Erhalt einer offiziellen Teilnahmebescheinigung ist eine regelmäßige Teilnahme von mindestens 80 Prozent der Unterrichtsstunden zwingend vorgeschrieben. Bei Fehlzeiten durch Krankheit ist der Verwaltung ab dem dritten Fehltag ein ärztliches Attest vorzulegen. Bei unentschuldigtem Fehlen von mehr als fünf Unterrichtstagen erlischt der Anspruch auf Prüfungszulassung."
+      },
+      {
+        "title": "Einstufungstest & Kurswechsel",
+        "content": "Vor Kursbeginn absolvieren alle neuen Lernenden einen verpflichtenden schriftlichen und mündlichen Einstufungstest. Sollte sich in den ersten drei Kurstagen herausstellen, dass das Niveau des zugewiesenen Kurses zu hoch oder zu niedrig ist, kann in Absprache mit der Lehrkraft und der Schulleitung ein einmaliger Wechsel in eine andere Niveaustufe erfolgen."
+      },
+      {
+        "title": "Prüfungsanmeldung & Rücktritt",
+        "content": "Die Anmeldung zu offiziellen Goethe- und telc-Zertifikatsprüfungen muss spätestens vier Wochen vor dem jeweiligen Prüfungstermin im Schulsekretariat schriftlich erfolgen. Ein Rücktritt von einer Prüfung ist bis zu 14 Tage vor dem Prüfungstermin unter Einbehaltung einer Bearbeitungsgebühr von 25,- Euro möglich; danach verfällt die Prüfungsgebühr vollständig."
+      },
+      {
+        "title": "Unterrichtsmaterialien & Copyright",
+        "content": "Die offiziellen Lehrbücher sind von den Teilnehmenden selbst anzuschaffen und zum ersten Kurstag mitzubringen. Vom Dozenten ausgegebene Arbeitsblätter und Audio-Übungen sind urheberrechtlich geschützt und dürfen weder kopiert noch auf öffentlichen Online-Plattformen weitergegeben werden."
+      }
+    ],
+    "items": [
+      {
+        "id": "e9-t5-27",
+        "number": 27,
+        "question": "Um eine Bescheinigung über den Kurs zu erhalten, ...",
+        "options": {
+          "a": "muss man an mindestens 80 Prozent des Unterrichts teilnehmen.",
+          "b": "darf man keinen einzigen Tag krank sein.",
+          "c": "muss man alle Hausaufgaben fehlerfrei abgeben."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e9-t5-28",
+        "number": 28,
+        "question": "Ein Wechsel in einen anderen Sprachkurs ...",
+        "options": {
+          "a": "ist während der gesamten Kursdauer jederzeit möglich.",
+          "b": "kann in den ersten drei Tagen nach Rücksprache erfolgen.",
+          "c": "ist an der Sprachakademie grundsätzlich untersagt."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e9-t5-29",
+        "number": 29,
+        "question": "Wenn man sich von einer Prüfung abmelden möchte, ...",
+        "options": {
+          "a": "muss dies mindestens zwei Wochen vorher geschehen.",
+          "b": "bekommt man immer die volle Gebühr ohne Abzug zurück.",
+          "c": "muss man einen Ersatzteilnehmer benennen."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e9-t5-30",
+        "number": 30,
+        "question": "Die Arbeitsblätter aus dem Unterricht ...",
+        "options": {
+          "a": "dürfen nicht im Internet verbreitet werden.",
+          "b": "müssen am Ende des Kurses an die Schule zurückgegeben werden.",
+          "c": "können an Freunde verkauft werden."
+        },
+        "correctAnswer": "a"
+      }
+    ]
+  }
+}

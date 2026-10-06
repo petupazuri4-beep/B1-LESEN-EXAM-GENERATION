@@ -1,0 +1,462 @@
+{
+  "id": "b1-lesen-07",
+  "examNumber": 7,
+  "title": "Übungssatz 07: Musikfestivals, Kultur & Kunst für alle",
+  "theme": "Musikfestivals & Kulturelle Teilhabe",
+  "status": "Ready",
+  "updatedAt": "2026-09-28T09:30:00Z",
+  "styleConfig": {
+    "fontFamily": "Source Sans 3",
+    "baseFontSizePt": 10,
+    "lineHeight": 1.4,
+    "headerBarColor": "#d9d9d9",
+    "headerTextColor": "#000000",
+    "accentColor": "#d97706",
+    "marginPreset": "normal"
+  },
+  "candidateInfo": {
+    "institution": "Goethe-Institut Dresden",
+    "city": "Dresden",
+    "examType": "Erwachsene",
+    "centerCode": "DE-SN-12297"
+  },
+  "teil1": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?",
+    "sourceContext": "Johanna schreibt ihrem Bruder Tobias über ihren Besuch eines dreitägigen Open-Air-Musikfestivals.",
+    "emailGreeting": "Lieber Tobias,",
+    "emailBody": "ich bin wieder heil zu Hause angekommen und muss dir unbedingt vom „Elb-Klang Festival“ in der Nähe von Meißen berichten! Du weißt ja, wie lange ich gezögert habe, weil die Wettervorhersage für das Wochenende Dauerregen und Gewitter gemeldet hatte.\n\nAber zum Glück haben meine Freundinnen mich überredet, trotzdem mitzufahren. Als wir am Freitagnachmittag ankamen, war der Campingplatz zwar schon eine ziemliche Schlammwüste, aber die Stimmung unter den Leuten war von der ersten Sekunde an fantastisch. Alle haben sich beim Zeltaufbau gegenseitig geholfen und Gummistiefel ausgeliehen.\n\nMusikalisch war es ein absoluter Traum: Auf vier verschiedenen Bühnen spielten über fünfzig Bands aus ganz Europa – von Indie-Rock über elektronische Beats bis hin zu traditioneller Blasmusik im modernen Gewand. Mein persönliches Highlight war das Akustik-Konzert einer schwedischen Sängerin bei Sonnenuntergang am Flussufer.\n\nWas mich besonders beeindruckt hat, war das Müllkonzept: Es gab überall getrennte Behälter und ein Pfandsystem für Mehrwegbecher. Wenn man am Ende seinen Müllsack voll abgab, bekam man fünf Euro Pfand zurück. Der Zeltplatz war am Sonntagabend fast blitzblank!\n\nNächstes Jahr musst du dir das Wochenende im Juli unbedingt freihalten, wir fahren wieder hin!\n\nGanz liebe Grüße\nJohanna",
+    "emailSignoff": "Ganz liebe Grüße\nJohanna",
+    "authorLocation": "Dresden",
+    "beispiel": {
+      "statement": "Johanna war von Anfang an völlig sicher, dass das Wetter sonnig wird.",
+      "answer": "Falsch"
+    },
+    "items": [
+      {
+        "id": "e7-t1-1",
+        "number": 1,
+        "statement": "Wegen der schlechten Wetterprognose wollte Johanna das Festival fast absagen.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e7-t1-2",
+        "number": 2,
+        "statement": "Die Besucher auf dem Zeltplatz zeigten große Hilfsbereitschaft.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e7-t1-3",
+        "number": 3,
+        "statement": "Auf dem Festival trat nur eine einzige Musikgruppe auf.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e7-t1-4",
+        "number": 4,
+        "statement": "Johannas Lieblingskonzert fand direkt am Ufer der Elbe statt.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e7-t1-5",
+        "number": 5,
+        "statement": "Die Festivalbesucher ließen am Ende überall ihren Müll liegen.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e7-t1-6",
+        "number": 6,
+        "statement": "Johanna plant, im nächsten Jahr wieder an dem Festival teilzunehmen.",
+        "correctAnswer": "Richtig"
+      }
+    ]
+  },
+  "teil2": {
+    "workTimeMinutes": 20,
+    "instruction": "Lesen Sie den Text aus der Presse und die Aufgaben dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "textA": {
+      "title": "Kulturpass für junge Erwachsene",
+      "kicker": "Bundesregierung schenkt 18-Jährigen Kulturguthaben",
+      "source": "aus einer überregionalen deutschen Tageszeitung",
+      "bodyParagraphs": [
+        "Seit dem vergangenen Jahr erhalten alle jungen Menschen in Deutschland zu ihrem 18. Geburtstag ein digitales Kulturbudget von hundert Euro geschenkt. Über die offizielle „KulturPass-App“ können die Jugendlichen das Guthaben für Theaterkarten, Kinobesuche, Musikinstrumente, Noten und Bücher in örtlichen Buchhandlungen einlösen.",
+        "Kulturstaatsministerin Claudia Roth bezeichnete das Projekt als vollen Erfolg: „Wir wollen junge Menschen nach den Einschränkungen der Pandemie wieder für Live-Kultur begeistern und gleichzeitig lokale Kulturveranstalter stärken.“ Große internationale Online-Versandhändler sind vom Angebot bewusst ausgeschlossen.",
+        "Die Auswertung zeigt, dass über sechzig Prozent des Geldes für gedruckte Bücher und Tickets für Konzerte ausgegeben wurden. Nun wird diskutiert, den Kulturpass dauerhaft zu etablieren und auf 16-Jährige auszuweiten."
+      ],
+      "beispiel": {
+        "question": "Mit dem Kulturpass erhalten Jugendliche ...",
+        "options": {
+          "a": "Geld für Theater, Konzerte und Bücher.",
+          "b": "kostenlose Bahnfahrten in ganz Europa.",
+          "c": "ein neues Smartphone zum Geburtstag."
+        },
+        "answer": "a"
+      },
+      "items": [
+        {
+          "id": "e7-t2-7",
+          "number": 7,
+          "question": "Wer darf den Kulturpass in Deutschland nutzen?",
+          "options": {
+            "a": "Alle Personen ab sechzig Jahren.",
+            "b": "Junge Menschen, die 18 Jahre alt werden.",
+            "c": "Ausschließlich Musikstudenten an Hochschulen."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e7-t2-8",
+          "number": 8,
+          "question": "Wo kann das Guthaben des Kulturpasses eingelöst werden?",
+          "options": {
+            "a": "Bei lokalen Buchhandlungen und Veranstaltern vor Ort.",
+            "b": "Bei weltweiten Online-Giganten für Elektronikartikel.",
+            "c": "Ausschließlich in Berliner Opernhäusern."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e7-t2-9",
+          "number": 9,
+          "question": "Wofür gaben die Jugendlichen das meiste Geld aus?",
+          "options": {
+            "a": "Für Computerspiele und Spielkonsolen.",
+            "b": "Für Kinofilme aus Hollywood.",
+            "c": "Für Bücher und Eintrittskarten zu Live-Konzerten."
+          },
+          "correctAnswer": "c"
+        }
+      ]
+    },
+    "textB": {
+      "title": "Die Kunsthalle ohne Eintritt",
+      "kicker": "Basel erprobt freien Zugang zu städtischen Museen am Sonntag",
+      "source": "aus einer Schweizer Zeitung",
+      "bodyParagraphs": [
+        "Kunst soll kein Luxus für Wohlhabende sein. Unter diesem Leitgedanken öffnet die Kunsthalle Basel an jedem ersten Sonntag im Monat ihre Türen für alle Besucher komplett kostenfrei. Das Pilotprojekt läuft seit einem Jahr und übertrifft alle Erwartungen.",
+        "An den freien Sonntagen strömen bis zu dreimal so viele Gäste in die Ausstellungen wie an regulären Tagen. Besonders viele Familien, Jugendliche und Menschen, die zuvor noch nie ein Kunstmuseum betreten hatten, nutzen die Gelegenheit.",
+        "Museumsdirektorin Elena Rossi betont: „Die Hemmschwelle sinkt enorm, wenn man nicht erst zwanzig Franken an der Kasse zahlen muss.“ Die Stadtverwaltung prüft nun, ob das Modell auf das Historische Museum und das Naturhistorische Museum übertragen wird."
+      ],
+      "items": [
+        {
+          "id": "e7-t2-10",
+          "number": 10,
+          "question": "In der Kunsthalle Basel ...",
+          "options": {
+            "a": "kostet der Eintritt an jedem ersten Sonntag im Monat nichts.",
+            "b": "müssen Besucher vorab eine teure Kunstführung buchen.",
+            "c": "dürfen Kinder grundsätzlich nicht hinein."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e7-t2-11",
+          "number": 11,
+          "question": "Durch den freien Eintritt ...",
+          "options": {
+            "a": "kommen viel mehr Menschen, die selten im Museum waren.",
+            "b": "sind die Kunstwerke stark beschädigt worden.",
+            "c": "muss das Museum an Werktagen geschlossen bleiben."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e7-t2-12",
+          "number": 12,
+          "question": "Die Stadt Basel überlegt nun, ...",
+          "options": {
+            "a": "das Projekt wegen Geldmangels sofort zu stoppen.",
+            "b": "auch andere Museen an ausgewählten Tagen gratis zu öffnen.",
+            "c": "die Kunsthalle an private Investoren zu verkaufen."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    }
+  },
+  "teil3": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen A bis J aus verschiedenen deutschsprachigen Medien. Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall schreiben Sie 0.",
+    "contextDescription": "Personen suchen nach Kulturveranstaltungen, Kunstkursen und musikalischen Angeboten.",
+    "beispiel": {
+      "situation": "Sandra möchte an einem Schnupperkurs für Töpfern an der Drehscheibe teilnehmen.",
+      "answer": "b"
+    },
+    "situations": [
+      {
+        "id": "e7-t3-13",
+        "number": 13,
+        "situation": "Jonas sucht ein Festival für elektronische Musik mit Campingmöglichkeit an einem See.",
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e7-t3-14",
+        "number": 14,
+        "situation": "Miriam möchte alte Ölgemälde restaurieren lassen und sucht eine Fachwerkstatt.",
+        "correctAnswer": "d"
+      },
+      {
+        "id": "e7-t3-15",
+        "number": 15,
+        "situation": "Klaus möchte in einem Laien-Orchester Querflöte spielen und sucht wöchentliche Proben.",
+        "correctAnswer": "h"
+      },
+      {
+        "id": "e7-t3-16",
+        "number": 16,
+        "situation": "David sucht Theaterkarten für ein Stück von Friedrich Schiller am Samstagabend.",
+        "correctAnswer": "f"
+      },
+      {
+        "id": "e7-t3-17",
+        "number": 17,
+        "situation": "Laura möchte einen Fotokurs für Schwarz-Weiß-Fotografie und analoge Dunkelkammer besuchen.",
+        "correctAnswer": "c"
+      },
+      {
+        "id": "e7-t3-18",
+        "number": 18,
+        "situation": "Thomas sucht einen Jazzclub, der sonntags einen musikalischen Brunch anbietet.",
+        "correctAnswer": "g"
+      },
+      {
+        "id": "e7-t3-19",
+        "number": 19,
+        "situation": "Elena sucht einen Ballettunterricht speziell für professionelle Tänzerinnen.",
+        "correctAnswer": "0"
+      }
+    ],
+    "unusedAdLetter": "e",
+    "advertisements": [
+      {
+        "id": "ad-7a",
+        "letter": "a",
+        "title": "SeeKlang Open-Air: Elektronische Beats am See",
+        "body": "3 Tage Tanzen und Baden am Bärwalder See! Top-DJs aus Berlin und London, chillige Strandbühne, Zeltplatz direkt am Wasser. Tickets inklusive Camping ab 89 €.",
+        "contact": "www.seeklang-festival.de",
+        "rotationDeg": -1.2
+      },
+      {
+        "id": "ad-7b",
+        "letter": "b",
+        "title": "Beispiel: Keramikstudio TonArt",
+        "body": "Wochenend-Workshops für Anfänger an der elektrischen Töpferscheibe. Lerne Schalen und Becher formen und glasieren.",
+        "contact": "kontakt@tonart-werkstatt.de",
+        "rotationDeg": 0
+      },
+      {
+        "id": "ad-7c",
+        "letter": "c",
+        "title": "Analoge Fotografie & Dunkelkammer-Praxis",
+        "body": "Entdecke die Faszination des analogen Films! Filmentwicklung in Schwarz-Weiß, Vergrößern und Belichten auf Barytpapier. 2-Tages-Kurs im Kulturzentrum.",
+        "contact": "info@dunkelkammer-dresden.de",
+        "rotationDeg": 1.3
+      },
+      {
+        "id": "ad-7d",
+        "letter": "d",
+        "title": "Restaurierungswerkstatt für Gemälde & Skulpturen",
+        "body": "Fachgerechte Konservierung und Reinigung historischer Ölgemälde, Goldrahmen und Holzskulpturen durch staatlich anerkannte Restauratoren. Kostenlose Erstbegutachtung.",
+        "contact": "Tel. 0351-482099 | www.kunstrestaurierung-sachsen.de",
+        "rotationDeg": -0.7
+      },
+      {
+        "id": "ad-7e",
+        "letter": "e",
+        "title": "Operngala in der Semperoper",
+        "body": "Arien von Mozart, Verdi und Puccini mit internationalem Solistenensemble und Staatskapelle. Festliche Abendgarderobe erwünscht.",
+        "contact": "karten@semperoper-kasse.de",
+        "rotationDeg": 2.3
+      },
+      {
+        "id": "ad-7f",
+        "letter": "f",
+        "title": "Schauspielhaus: „Die Räuber“ von Friedrich Schiller",
+        "body": "Moderne Neuinszenierung des Sturm-und-Drang-Klassikers auf der großen Bühne. Vorstellungen samstags 19:30 Uhr. Ermäßigte Schüler- und Studentenkarten erhältlich.",
+        "contact": "tickets@schauspielhaus-dresden.de",
+        "rotationDeg": -1.5
+      },
+      {
+        "id": "ad-7g",
+        "letter": "g",
+        "title": "Blue Note Jazzclub: Sunday Jazz-Brunch",
+        "body": "Jeden Sonntag ab 11 Uhr: Reichhaltiges warmes und kaltes Buffet bei feinstem Live-Swing und Bossa Nova unseres Haus-Trios. Reservierung empfohlen!",
+        "contact": "brunch@bluenote-club.de | Tel. 0351-804433",
+        "rotationDeg": 0.9
+      },
+      {
+        "id": "ad-7h",
+        "letter": "h",
+        "title": "Sinfonisches Laienorchester sucht Holzbläser",
+        "body": "Wir proben jeden Montag von 19 bis 21:30 Uhr klassische Meisterwerke und Filmmusik. Herzlich willkommen sind Querflöte, Oboe und Klarinette mit Notenkenntnissen.",
+        "contact": "orchester-dresden-mitte@gmx.de",
+        "rotationDeg": -1.1
+      },
+      {
+        "id": "ad-7i",
+        "letter": "i",
+        "title": "Graffiti-Workshop für Jugendliche",
+        "body": "Lerne Spraytechniken, Stencils und Typografie ganz legal an unserer Übungswand im Skatepark. Farben und Masken werden gestellt.",
+        "contact": "jugendkunst@urban-streetart.org",
+        "rotationDeg": 1.4
+      },
+      {
+        "id": "ad-7j",
+        "letter": "j",
+        "title": "Flamenco-Tanzkurs für Einsteiger",
+        "body": "Rhythmus, Eleganz und feurige Schrittkombinationen. Schnupperkurs montags um 18 Uhr im Tanzstudio Süd.",
+        "contact": "flamenco-tanz@online.de",
+        "rotationDeg": -0.4
+      }
+    ]
+  },
+  "teil4": {
+    "workTimeMinutes": 15,
+    "instruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für ein gesetzliches Verbot von Straßenmusik nach 20:00 Uhr? Ja oder Nein?",
+    "contextTopic": "In einer sächsischen Tageszeitung lesen Sie Kommentare zum Thema „Sollte Straßenmusik in Fußgängerzonen nach 20:00 Uhr generell verboten werden?“",
+    "questionFraming": "Ist die Person für ein Verbot von Straßenmusik nach 20 Uhr?",
+    "beispiel": {
+      "author": "Eberhard",
+      "age": 65,
+      "city": "Meißen",
+      "text": "Wer direkt über einer belebten Fußgängerzone wohnt, weiß, wie zermürbend es ist, wenn stundenlang dieselben drei Akkorde mit Verstärker gedudelt werden. Abends haben Anwohner ein Recht auf Ruhe. Ein Verbot ab 20 Uhr ist vollkommen berechtigt.",
+      "answer": "Ja"
+    },
+    "leserbriefe": [
+      {
+        "id": "e7-t4-20",
+        "number": 20,
+        "author": "Mia",
+        "age": 22,
+        "city": "Leipzig",
+        "text": "Straßenmusik belebt unsere Innenstädte und macht sie lebendig und bunt. An lauen Sommerabenden draußen zu sitzen und handgemachte Musik zu hören, schafft echte Lebensqualität. Ein frühes Verbot würde das Nachtleben ersticken.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e7-t4-21",
+        "number": 21,
+        "author": "Gerhard",
+        "age": 57,
+        "city": "Chemnitz",
+        "text": "Viele Straßenmusiker nutzen heute extrem laute elektronische Verstärker. Das hat mit romantischer Straßenkunst nichts mehr zu tun, das ist reine Lärmbelästigung. Kinder können bei diesem Krach nicht schlafen.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e7-t4-22",
+        "number": 22,
+        "author": "Moritz",
+        "age": 29,
+        "city": "Zwickau",
+        "text": "In anderen europäischen Großstädten wie Madrid oder Rom gehört Musik auf den Plätzen selbstverständlich zur Abendkultur. Deutsche Städte wirken abends ohnehin oft wie ausgestorben. Wir sollten Künstler fördern, statt sie zu vertreiben.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e7-t4-23",
+        "number": 23,
+        "author": "Irmgard",
+        "age": 61,
+        "city": "Bautzen",
+        "text": "Geschäftsleute und Anwohner müssen am nächsten Morgen früh aufstehen und arbeiten. Wenn bis Mitternacht getrommelt und gesungen wird, führt das zu Schlafmangel und Streit. Um 20 Uhr muss Schluss sein.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e7-t4-24",
+        "number": 24,
+        "author": "Sven",
+        "age": 36,
+        "city": "Görlitz",
+        "text": "Statt eines pauschalen Verbots sollte das Ordnungsamt lieber die Lautstärke kontrollieren oder unverstärkte Instrumente weiterhin erlauben. Ein komplettes Verbot bestraft auch talentierte Geiger oder Flötenspieler.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e7-t4-25",
+        "number": 25,
+        "author": "Helga",
+        "age": 53,
+        "city": "Pirna",
+        "text": "Viele Musiker wechseln ihren Standort nicht und spielen stundenlang dieselben Lieder vor denselben Wohnhäusern. Das Ordnungsamt ist personell nicht in der Lage, jeden Einzelfall zu prüfen. Eine feste Uhrzeit ist die einzig klare Lösung.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e7-t4-26",
+        "number": 26,
+        "author": "Julian",
+        "age": 19,
+        "city": "Freiberg",
+        "text": "Für junge Musiker ist die Straße oft die einzige Möglichkeit, ihr Können vor Publikum zu zeigen und ein paar Euro für das Studium dazuzuverdienen. Wir sollten dankbar für diese Gratis-Kultur sein.",
+        "correctAnswer": "Nein"
+      }
+    ]
+  },
+  "teil5": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "contextSituation": "Sie möchten im Kulturzentrum „Alte Feuerwache“ einen Raum für einen Workshop mieten und lesen die Nutzungsordnung.",
+    "sheetTitle": "NUTZUNGS- UND VERLEIHORDNUNG KULTURZENTRUM ALTE FEUERWACHE",
+    "sheetSubtitle": "Regeln für Veranstalter, Kursleiter und Raumnutzer",
+    "sections": [
+      {
+        "title": "Buchung, Kaution & Schlüsselübergabe",
+        "content": "Räume können von gemeinnützigen Vereinen, Privatpersonen und Initiativen gemietet werden. Eine Buchungsanfrage muss mindestens zwei Wochen vor dem Veranstaltungstermin schriftlich vorliegen. Bei Vertragsunterzeichnung ist eine Kaution in Höhe von 150,- Euro in bar oder per Überweisung zu hinterlegen. Die Schlüsselübergabe erfolgt am Veranstaltungstag gegen 14:00 Uhr nach Vorlage des Personalausweises."
+      },
+      {
+        "title": "Technik, Mobiliar & Raumübergabe",
+        "content": "Die vorhandene Audioanlage, der Beamer sowie Tische und Stühle stehen zur freien Nutzung zur Verfügung. Der Mieter verpflichtet sich, sämtliche Geräte nach Gebrauch fachgerecht auszuschalten und das Mobiliar in der ursprünglichen Bestuhlung aufzustellen. Schäden an Inventar oder Gebäudeteilen sind der Hausleitung unverzüglich zu melden."
+      },
+      {
+        "title": "Lärmschutz, Ende & Nachtruhe",
+        "content": "Aufgrund der angrenzenden Wohnbebauung sind ab 22:00 Uhr alle Fenster und Außentüren geschlossen zu halten. Musikanlagen sind ab 23:00 Uhr auf Hintergrundlautstärke zu regeln. Veranstaltungen an Werktagen müssen spätestens um 24:00 Uhr beendet sein; an Freitagen und Samstagen darf die Nutzung bis 02:00 Uhr nachts erfolgen."
+      },
+      {
+        "title": "Reinigung & Müllbeseitigung",
+        "content": "Der gemietete Raum ist besenrein zu hinterlassen. Mitgebrachte Dekorationen, Speisereste und Müll müssen vom Mieter vollständig in den eigenen Müllsäcken entsorgt und mitgenommen werden. Erfolgt die Reinigung nicht ordnungsgemäß, wird die Kaution zur Deckung der professionellen Reinigungskosten einbehalten."
+      }
+    ],
+    "items": [
+      {
+        "id": "e7-t5-27",
+        "number": 27,
+        "question": "Wie viel Kaution muss für die Raumanmietung hinterlegt werden?",
+        "options": {
+          "a": "Ein Betrag von 150 Euro.",
+          "b": "Genau fünfzig Euro pro Stunde.",
+          "c": "Keine Kaution bei Vorlage des Ausweises."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e7-t5-28",
+        "number": 28,
+        "question": "Nach der Veranstaltung müssen Mieter ...",
+        "options": {
+          "a": "alle Tische und Stühle so hinstellen wie zu Beginn.",
+          "b": "den Beamer mit nach Hause nehmen.",
+          "c": "alle Lampen die ganze Nacht brennen lassen."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e7-t5-29",
+        "number": 29,
+        "question": "Am Samstagabend darf eine Veranstaltung ...",
+        "options": {
+          "a": "bis maximal 22:00 Uhr dauern.",
+          "b": "höchstens bis 24:00 Uhr gehen.",
+          "c": "bis zwei Uhr morgens stattfinden."
+        },
+        "correctAnswer": "c"
+      },
+      {
+        "id": "e7-t5-30",
+        "number": 30,
+        "question": "Wenn die Räume nach der Feier schmutzig bleiben, ...",
+        "options": {
+          "a": "wird die Kaution für das Putzen verwendet.",
+          "b": "erhält man Hausverbot für zehn Jahre.",
+          "c": "muss man doppelte Miete bezahlen."
+        },
+        "correctAnswer": "a"
+      }
+    ]
+  }
+}

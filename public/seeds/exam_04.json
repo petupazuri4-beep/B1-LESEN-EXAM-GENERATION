@@ -1,0 +1,462 @@
+{
+  "id": "b1-lesen-04",
+  "examNumber": 4,
+  "title": "Übungssatz 04: Digitales Lernen & Neue Medien",
+  "theme": "Digitales Lernen & Online-Kurse",
+  "status": "Ready",
+  "updatedAt": "2026-09-28T09:15:00Z",
+  "styleConfig": {
+    "fontFamily": "Source Sans 3",
+    "baseFontSizePt": 10,
+    "lineHeight": 1.4,
+    "headerBarColor": "#d9d9d9",
+    "headerTextColor": "#000000",
+    "accentColor": "#d97706",
+    "marginPreset": "normal"
+  },
+  "candidateInfo": {
+    "institution": "ÖSD Prüfungszentrum Wien",
+    "city": "Wien",
+    "examType": "Erwachsene",
+    "centerCode": "AT-W-34344"
+  },
+  "teil1": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?",
+    "sourceContext": "Elena berichtet ihrer Kollegin Sandra in einer E-Mail über einen Online-Weiterbildungskurs.",
+    "emailGreeting": "Liebe Sandra,",
+    "emailBody": "wie versprochen melde ich mich mit ersten Eindrücken zu meinem Online-Lehrgang im Bereich Projektmanagement! Du warst ja anfangs eher skeptisch, ob ein reiner Fernkurs neben unserer 40-Stunden-Woche im Büro machbar ist. Jetzt nach vier Wochen kann ich ein erstes Zwischenfazit ziehen.\n\nDas Beste an diesem Kurs ist die zeitliche Unabhängigkeit. Die Vorlesungsvideos sind alle aufgezeichnet, sodass ich sie mir anschauen kann, wann immer ich möchte. Meistens lerne ich montags und mittwochs zwei Stunden abends oder am Samstagvormittag bei einer Tasse Tee auf dem Balkon. Die Unterlagen und Übungsaufgaben lade ich direkt auf mein Tablet herunter.\n\nAllerdings braucht man wirklich eiserne Disziplin. Niemand kontrolliert dich, wenn du eine Woche faul bist. Wenn man die Termine für die wöchentlichen Einsendeaufgaben schleifen lässt, verliert man schnell den Anschluss. Zum Glück haben wir eine virtuelle Lerngruppe mit fünf Teilnehmenden gegründet. Wir treffen uns jeden Donnerstag um 19:30 Uhr über Zoom, diskutieren Fallstudien und motivieren uns gegenseitig.\n\nEnde nächsten Monats steht die Zwischenprüfung an. Wenn ich die schaffe, zahlt unsere Firma sogar die Hälfte der Kursgebühren zurück! Wie sieht es bei dir aus? Hättest du nicht auch Interesse an dem Modul für Marketing?\n\nHerzliche Grüße aus Wien\nElena",
+    "emailSignoff": "Herzliche Grüße aus Wien\nElena",
+    "authorLocation": "Wien",
+    "beispiel": {
+      "statement": "Elena macht den Kurs während einer beruflichen Pause.",
+      "answer": "Falsch"
+    },
+    "items": [
+      {
+        "id": "e4-t1-1",
+        "number": 1,
+        "statement": "Sandra hatte zunächst Bedenken wegen des Arbeitsaufwands für den Kurs.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e4-t1-2",
+        "number": 2,
+        "statement": "Elena muss zu festen Uhrzeiten an Live-Vorlesungen teilnehmen.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e4-t1-3",
+        "number": 3,
+        "statement": "Für den Online-Kurs ist ein hohes Maß an Selbstorganisation nötig.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e4-t1-4",
+        "number": 4,
+        "statement": "Elena lernt während des gesamten Kurses ausschließlich allein.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e4-t1-5",
+        "number": 5,
+        "statement": "Der Arbeitgeber übernimmt bei Erfolg einen Teil der Kosten.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e4-t1-6",
+        "number": 6,
+        "statement": "Elena rät Sandra davon ab, selbst einen Online-Kurs zu belegen.",
+        "correctAnswer": "Falsch"
+      }
+    ]
+  },
+  "teil2": {
+    "workTimeMinutes": 20,
+    "instruction": "Lesen Sie den Text aus der Presse und die Aufgaben dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "textA": {
+      "title": "Die digitale Volkshochschule",
+      "kicker": "Weiterbildung im Internet boomt im ländlichen Raum",
+      "source": "aus einer österreichischen Tageszeitung",
+      "bodyParagraphs": [
+        "Lange Anfahrtswege und unpassende Kurszeiten hielten bisher viele Menschen in ländlichen Regionen von der Weiterbildung an Volkshochschulen (VHS) ab. Durch den massiven Ausbau von Online-Angeboten hat sich das grundlegend geändert. Im Bundesland Niederösterreich stieg die Zahl der Online-Teilnehmer im vergangenen Semester um über vierzig Prozent.",
+        "Besonders gefragt sind Sprachkurse am Feierabend sowie Seminare zu Fotobearbeitung, Programmierung und digitaler Buchhaltung. „Unsere Dozenten unterrichten heute interaktiv mit digitalen Whiteboards und Gruppenräumen“, erklärt VHS-Leiter Mag. Walter Steiner.",
+        "Dennoch soll der Präsenzunterricht nicht völlig verschwinden. Viele Menschen schätzen nach wie vor den persönlichen Austausch beim gemeinsamen Töpfern oder Kochen. Die Zukunft liege daher in hybriden Formaten, die Online-Theorie mit praktischen Präsenztagen verbinden."
+      ],
+      "beispiel": {
+        "question": "Die Online-Kurse der Volkshochschule ...",
+        "options": {
+          "a": "werden hauptsächlich von Schülern besucht.",
+          "b": "verzeichnen im ländlichen Raum große Zuwächse.",
+          "c": "kosten doppelt so viel wie normale Kurse."
+        },
+        "answer": "b"
+      },
+      "items": [
+        {
+          "id": "e4-t2-7",
+          "number": 7,
+          "question": "Ein wesentlicher Vorteil der Online-Kurse für Menschen auf dem Land ist, dass ...",
+          "options": {
+            "a": "sie keine langen Wege mehr auf sich nehmen müssen.",
+            "b": "sie keine Hausaufgaben mehr abgeben müssen.",
+            "c": "die Kurse grundsätzlich kostenlos angeboten werden."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e4-t2-8",
+          "number": 8,
+          "question": "Welche Fächer werden im Internet besonders häufig gewählt?",
+          "options": {
+            "a": "Schwimmen und Gymnastik.",
+            "b": "Sprachen und IT-Themen.",
+            "c": "Chorgesang und Schauspiel."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e4-t2-9",
+          "number": 9,
+          "question": "Für die Zukunft plant die Volkshochschule ...",
+          "options": {
+            "a": "alle Schulungsgebäude auf dem Land zu verkaufen.",
+            "b": "eine Mischung aus Online-Lernen und Treffen vor Ort.",
+            "c": "nur noch reine Fernlehrgänge ohne Lehrer durchzuführen."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    },
+    "textB": {
+      "title": "Schule ohne Schulranzen",
+      "kicker": "Gymnasium in Basel setzt vollständig auf Tablets im Unterricht",
+      "source": "aus einer Schweizer Zeitung",
+      "bodyParagraphs": [
+        "Schwere Taschen mit dicken Büchern gehören am Leonhard-Gymnasium in Basel der Vergangenheit an. Seit Beginn des Schuljahres arbeiten alle Schülerinnen und Schüler ab der 9. Klasse mit einheitlichen Tablets. Auf den Geräten befinden sich sämtliche Schulbücher, Übungshefte und ein digitaler Stundenplan.",
+        "Rektorin Beatrix Frey zieht eine erste positive Bilanz: „Die Jugendlichen lernen wesentlich motivierter, recherchieren selbstständig im Netz und können Arbeitsergebnisse direkt auf dem Beamer im Klassenzimmer präsentieren.“",
+        "Gleichzeitig gibt es strenge Schutzvorkehrungen: Während des Unterrichts sind soziale Netzwerke und Spiele auf den Schul-Tablets gesperrt. Bei Klassenarbeiten schalten die Lehrkräfte die Geräte in einen geschützten Prüfungsmodus ohne Internetzugang."
+      ],
+      "items": [
+        {
+          "id": "e4-t2-10",
+          "number": 10,
+          "question": "Am Gymnasium in Basel ...",
+          "options": {
+            "a": "dürfen Schüler keine Handys mehr besitzen.",
+            "b": "nutzen Schüler ab Klasse 9 Tablets statt gedruckter Bücher.",
+            "c": "findet der Unterricht nur noch von zu Hause aus statt."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e4-t2-11",
+          "number": 11,
+          "question": "Laut Schulleiterin Beatrix Frey führt die Tablet-Nutzung dazu, dass ...",
+          "options": {
+            "a": "die Schülerinnen und Schüler selbstständiger arbeiten.",
+            "b": "Lehrkräfte weniger Unterricht vorbereiten müssen.",
+            "c": "Noten in allen Fächern automatisch besser werden."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e4-t2-12",
+          "number": 12,
+          "question": "Um Täuschungen bei Prüfungen zu verhindern, ...",
+          "options": {
+            "a": "müssen die Schüler wieder mit Füller auf Papier schreiben.",
+            "b": "wird der Zugang zum Internet auf den Geräten blockiert.",
+            "c": "wird die Prüfungszeit auf dreißig Minuten verkürzt."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    }
+  },
+  "teil3": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen A bis J aus verschiedenen deutschsprachigen Medien. Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall schreiben Sie 0.",
+    "contextDescription": "Personen suchen nach Bildungs- und Weiterbildungsangeboten im Internet.",
+    "beispiel": {
+      "situation": "Tobias sucht eine App zum Vokabellernen für spanische Alltagsbegriffe.",
+      "answer": "j"
+    },
+    "situations": [
+      {
+        "id": "e4-t3-13",
+        "number": 13,
+        "situation": "Marion möchte abends online programmieren lernen und sucht einen Anfängerkurs mit Zertifikat.",
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e4-t3-14",
+        "number": 14,
+        "situation": "Jürgen möchte lernen, wie man Podcasts aufnimmt und Tonspuren am Computer bearbeitet.",
+        "correctAnswer": "c"
+      },
+      {
+        "id": "e4-t3-15",
+        "number": 15,
+        "situation": "Sandra möchte an einer Hochschule ein komplettes Bachelorstudium als Fernstudium absolvieren.",
+        "correctAnswer": "f"
+      },
+      {
+        "id": "e4-t3-16",
+        "number": 16,
+        "situation": "Mehmet sucht einen Online-Vorbereitungskurs speziell für die B1-Deutschprüfung.",
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e4-t3-17",
+        "number": 17,
+        "situation": "Katja sucht kostenlose Lernvideos in Mathematik für Schüler der 10. Klasse.",
+        "correctAnswer": "g"
+      },
+      {
+        "id": "e4-t3-18",
+        "number": 18,
+        "situation": "Alexander sucht einen Kurs für traditionelles Gitarrenspiel im Präsenzunterricht.",
+        "correctAnswer": "0"
+      },
+      {
+        "id": "e4-t3-19",
+        "number": 19,
+        "situation": "Sabine möchte lernen, wie man professionelle Webseiten mit WordPress gestaltet.",
+        "correctAnswer": "d"
+      }
+    ],
+    "unusedAdLetter": "e",
+    "advertisements": [
+      {
+        "id": "ad-4a",
+        "letter": "a",
+        "title": "Python für Einsteiger: Dein Code-Zertifikat",
+        "body": "Keine Vorkenntnisse erforderlich! Lerne Programmieren von Grund auf in 8 interaktiven Online-Modulen. Wöchentliche Live-Sprechstunde mit Dozenten und anerkanntes IHK-Zertifikat.",
+        "contact": "www.code-academy-online.de | info@code-academy.de",
+        "rotationDeg": -1
+      },
+      {
+        "id": "ad-4b",
+        "letter": "b",
+        "title": "Fit für B1: Der Goethe/ÖSD Online-Trainer",
+        "body": "Gezielte Prüfungsvorbereitung für Zertifikat B1 (Lesen, Hören, Schreiben, Sprechen). Über 20 originale Modellprüfungen, Korrekturen von echten Prüfern und Live-Sprechtraining.",
+        "contact": "anmeldung@daf-pruefungstraining.com",
+        "rotationDeg": 1.2
+      },
+      {
+        "id": "ad-4c",
+        "letter": "c",
+        "title": "Podcast & Audio-Editing Masterclass",
+        "body": "Vom Mikrofon zur fertigen Sendung: Schneiden, Mischen und Verbessern von Tonaufnahmen mit kostenloser Software am PC/Mac. Video-Tutorials jederzeit abrufbar.",
+        "contact": "www.sound-campus-digital.at",
+        "rotationDeg": -0.7
+      },
+      {
+        "id": "ad-4d",
+        "letter": "d",
+        "title": "Webdesign mit WordPress: Schnell zur eigenen Site",
+        "body": "Gestalte ansprechende Blogs und Unternehmens-Websites ohne Programmieraufwand. Inklusive Hosting-Einrichtung, Responsive Design und SEO-Tipps. Abendkurs im Webinar.",
+        "contact": "Tel. 01-8904533 | office@web-learn.at",
+        "rotationDeg": 1.5
+      },
+      {
+        "id": "ad-4e",
+        "letter": "e",
+        "title": "Excel für Fortgeschrittene: Makros & Pivot",
+        "body": "Optimiere deine Tabellenkalkulation im Büro! Kurs für Berufstätige mit soliden Grundkenntnissen. Samstags-Intensivkurs online von 9 bis 16 Uhr.",
+        "contact": "schulung@office-profi.de",
+        "rotationDeg": -1.9
+      },
+      {
+        "id": "ad-4f",
+        "letter": "f",
+        "title": "Fernuniversität Online: Dein akkreditierter Bachelor",
+        "body": "Studiere BWL, Psychologie oder Informatik 100% flexibel von zu Hause! Staatlich anerkannte Abschlüsse, keine Präsenzpflicht, monatlicher Studienstart möglich.",
+        "contact": "www.fernuni-digital-study.de",
+        "rotationDeg": 0.8
+      },
+      {
+        "id": "ad-4g",
+        "letter": "g",
+        "title": "Mathe-Retter: Kostenlose Erklärvideos Klasse 5–12",
+        "body": "Geometrie, Gleichungen und Kurvendiskussion verständlich erklärt! Über 500 kostenlose Videolektionen und interaktive Übungsblätter zum Ausdrucken.",
+        "contact": "www.mathe-einfach-online.de",
+        "rotationDeg": -1.3
+      },
+      {
+        "id": "ad-4h",
+        "letter": "h",
+        "title": "Social Media Manager Kurs (Vollzeit)",
+        "body": "3-monatige geförderte Weiterbildung mit Bildungsgutschein. Kampagnenplanung für Instagram, TikTok und LinkedIn. Tägliche Online-Präsenz.",
+        "contact": "akademie@media-career.de",
+        "rotationDeg": 1.1
+      },
+      {
+        "id": "ad-4i",
+        "letter": "i",
+        "title": "Schnelltippen am PC: 10-Finger-System",
+        "body": "In nur 6 Stunden das Zehnfingersystem blind beherrschen! Spielerische Online-Übungen für Jung und Alt. Einmalzahlung nur 29 Euro.",
+        "contact": "www.tastatur-training.net",
+        "rotationDeg": -0.5
+      },
+      {
+        "id": "ad-4j",
+        "letter": "j",
+        "title": "Beispiel: Sprach-App LinguaPlus Spanisch",
+        "body": "Täglich 10 Minuten Übungen für Urlaub und Alltag. Spielerischer Wortschatzaufbau mit Spracherkennung und Grammatik-Häppchen auf dem Smartphone.",
+        "contact": "www.linguaplus-app.com",
+        "rotationDeg": 0
+      }
+    ]
+  },
+  "teil4": {
+    "workTimeMinutes": 15,
+    "instruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für ein Handyverbot an Schulen? Ja oder Nein?",
+    "contextTopic": "In einem Internetforum lesen Sie Kommentare zum Thema „Sollte die private Handynutzung für Schüler während des gesamten Schultags verboten werden?“",
+    "questionFraming": "Ist die Person für ein Handyverbot an Schulen?",
+    "beispiel": {
+      "author": "Gudrun",
+      "age": 49,
+      "city": "Klagenfurt",
+      "text": "Auf dem Schulhof schauen alle Kinder nur noch stumm auf Bildschirme, statt miteinander zu spielen oder zu reden. Ein striktes Verbot bringt wieder Bewegung und echtes Gespräch in die Pausen.",
+      "answer": "Ja"
+    },
+    "leserbriefe": [
+      {
+        "id": "e4-t4-20",
+        "number": 20,
+        "author": "Fabian",
+        "age": 17,
+        "city": "Innsbruck",
+        "text": "Verbote bringen überhaupt nichts. Wenn das Handy verboten wird, verstecken sich alle auf den Toiletten und spielen heimlich weiter. Die Schule sollte uns lieber beibringen, wie man verantwortungsvoll mit Medien umgeht.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e4-t4-21",
+        "number": 21,
+        "author": "Christine",
+        "age": 43,
+        "city": "Salzburg",
+        "text": "Als Lehrerin erlebe ich täglich, wie stark Smartphones die Konzentration stören. Selbst in den Pausen gibt es ständig Streit wegen Social Media oder Cybermobbing. An unserer Schule herrscht jetzt Handyverbot, und das Schulklima ist viel entspannter.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e4-t4-22",
+        "number": 22,
+        "author": "Niklas",
+        "age": 28,
+        "city": "Graz",
+        "text": "Wir leben im 21. Jahrhundert. Smartphones sind ein wichtiges Recherche- und Lernwerkzeug. Wenn der Bus ausfällt oder der Unterricht früher endet, müssen Jugendliche ihre Eltern unkompliziert anrufen können.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e4-t4-23",
+        "number": 23,
+        "author": "Veronika",
+        "age": 56,
+        "city": "Linz",
+        "text": "Studien zeigen ganz klar: Kinder lernen besser und sind ausgeglichener, wenn sie in der Schule bildschirmfreie Zeit haben. Schüler brauchen Schutz vor dem ständigen Benachrichtigungs-Druck.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e4-t4-24",
+        "number": 24,
+        "author": "Sebastian",
+        "age": 35,
+        "city": "Wels",
+        "text": "Statt rigider Verbote sollten Schulen digitale Medien sinnvoll in den Fachunterricht integrieren. Wie sollen junge Menschen Medienkompetenz entwickeln, wenn man das wichtigste Gerät des Alltags einfach wegsperrt?",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e4-t4-25",
+        "number": 25,
+        "author": "Beate",
+        "age": 51,
+        "city": "Bregenz",
+        "text": "In Frankreich gilt das Verbot an Schulen schon seit Jahren mit großem Erfolg. Die Schüler bewegen sich mehr, haben bessere Noten und finden wieder persönliche Freunde. Das sollten wir sofort übernehmen.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e4-t4-26",
+        "number": 26,
+        "author": "Lukas",
+        "age": 20,
+        "city": "St. Pölten",
+        "text": "In den großen Pausen muss es Schülern erlaubt sein, Musik zu hören oder mit Freunden zu chatten. Die Pausen gehören den Schülern zur Erholung, da hat die Schulleitung nicht jede Minute zu kontrollieren.",
+        "correctAnswer": "Nein"
+      }
+    ]
+  },
+  "teil5": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "contextSituation": "Sie buchen einen Online-Sprachkurs bei der Fernakademie „LernNetz“ und lesen die Teilnahmebedingungen durch.",
+    "sheetTitle": "TEILNAHME- UND NUTZUNGSORDNUNG LERNNETZ AKADEMIE",
+    "sheetSubtitle": "Bestimmungen für Online-Kurse und virtuelle Seminarräume",
+    "sections": [
+      {
+        "title": "Zugangsdaten & Benutzerkonto",
+        "content": "Die persönlichen Zugangsdaten zum Online-Campus dürfen nicht an Dritte weitergegeben werden. Jeder Teilnehmer haftet für Aktivitäten, die unter seinem Benutzerkonto erfolgen. Bei Verdacht auf Missbrauch wird das Konto umgehend vorübergehend gesperrt. Der Kurszugang bleibt ab dem gebuchten Kursstart für genau zwölf Monate aktiv."
+      },
+      {
+        "title": "Verhalten in Live-Webinaren",
+        "content": "In Live-Sitzungen sind Mikrofone beim Betreten des Raumes standardmäßig stummzuschalten. Wortmeldungen erfolgen über das Handhebe-Symbol. Das Mitschneiden oder Aufzeichnen von Video- oder Tonspuren durch Teilnehmer ist aus Gründen des Datenschutzes und Urheberrechts strengstens untersagt. Offizielle Aufzeichnungen der Lehrkraft werden innerhalb von 24 Stunden im Portal bereitgestellt."
+      },
+      {
+        "title": "Rücktritt & Kündigung",
+        "content": "Ein kostenloser Rücktritt vom Kurs ist bis zu vierzehn Tage nach Erhalt der Zugangsdaten ohne Angabe von Gründen schriftlich per E-Mail möglich. Wurden in dieser Zeit bereits mehr als 20 Prozent der Lehrmaterialien heruntergeladen, wird eine Bearbeitungsgebühr von 30,- Euro einbehalten."
+      },
+      {
+        "title": "Technische Voraussetzungen & Support",
+        "content": "Für die Teilnahme sind eine stabile Breitband-Internetverbindung sowie ein funktionierendes Headset erforderlich. Technische Störungen aufseiten des Nutzers berechtigen nicht zur Rückerstattung der Kursgebühren. Der technische Support der Akademie steht montags bis freitags von 08:00 bis 18:00 Uhr per Live-Chat zur Verfügung."
+      }
+    ],
+    "items": [
+      {
+        "id": "e4-t5-27",
+        "number": 27,
+        "question": "Wie lange kann man nach dem Start auf die Kursinhalte zugreifen?",
+        "options": {
+          "a": "Genau ein Jahr lang.",
+          "b": "Höchstens sechs Wochen.",
+          "c": "Unbegrenzt ein Leben lang."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e4-t5-28",
+        "number": 28,
+        "question": "Während der Live-Webinare ...",
+        "options": {
+          "a": "dürfen Teilnehmer den Ton selbst aufnehmen.",
+          "b": "muss das Mikrofon zunächst stummgeschaltet bleiben.",
+          "c": "ist die Webcam verpflichtend einzuschalten."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e4-t5-29",
+        "number": 29,
+        "question": "Ein Kurs kann kostenfrei storniert werden, wenn ...",
+        "options": {
+          "a": "man den Test nach zwei Monaten nicht besteht.",
+          "b": "man innerhalb von 14 Tagen kündigt und kaum Material geladen hat.",
+          "c": "die Internetverbindung zu langsam ist."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e4-t5-30",
+        "number": 30,
+        "question": "Der technische Kundendienst von LernNetz ...",
+        "options": {
+          "a": "ist auch sonntags rund um die Uhr per Telefon erreichbar.",
+          "b": "erledigt Reparaturen am Computer der Teilnehmer vor Ort.",
+          "c": "hilft werktags zwischen 8 und 18 Uhr im Chat."
+        },
+        "correctAnswer": "c"
+      }
+    ]
+  }
+}

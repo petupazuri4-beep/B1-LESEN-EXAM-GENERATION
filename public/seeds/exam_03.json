@@ -1,0 +1,462 @@
+{
+  "id": "b1-lesen-03",
+  "examNumber": 3,
+  "title": "Übungssatz 03: Ernährungs-Trends & Nachhaltiges Essen",
+  "theme": "Ernährungs-Trends & Nachhaltiges Essen",
+  "status": "Ready",
+  "updatedAt": "2026-09-28T09:10:00Z",
+  "styleConfig": {
+    "fontFamily": "Source Sans 3",
+    "baseFontSizePt": 10,
+    "lineHeight": 1.4,
+    "headerBarColor": "#d9d9d9",
+    "headerTextColor": "#000000",
+    "accentColor": "#d97706",
+    "marginPreset": "normal"
+  },
+  "candidateInfo": {
+    "institution": "Goethe-Institut Berlin",
+    "city": "Berlin",
+    "examType": "Erwachsene",
+    "centerCode": "DE-BE-16360"
+  },
+  "teil1": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?",
+    "sourceContext": "Felix schreibt seiner Schwester Katrin über seine Erfahrungen mit einer veganen Probewoche.",
+    "emailGreeting": "Liebe Katrin,",
+    "emailBody": "ich hoffe, bei dir in Stuttgart ist alles gut! Du weißt ja, wie gerne ich früher Currywurst und Schnitzel gegessen habe. Unsere Mutter hat mir immer gesagt, dass mir ein paar fleischfreie Tage nicht schaden würden. Vor zwei Wochen habe ich mich mit Freunden auf eine Wette eingelassen: einen ganzen Monat lang vegan leben!\n\nDie ersten Tage waren ehrlich gesagt ziemlich anstrengend. Ich stand ewig im Supermarkt und habe die Zutatenlisten auf jeder Packung studiert. Unglaublich, in wie vielen Produkten versteckte Milchpulver oder Gelatine stecken! Aber nach ein paar Tagen hatte ich den Dreh raus. Ein Kollege hat mir ein tolles Kochbuch für pflanzliche Eintöpfe und Currys geliehen, und ich habe Linsen, Kichererbsen und Tofu ganz neu für mich entdeckt.\n\nWas mich wirklich überrascht hat: Ich fühle mich nach dem Mittagessen überhaupt nicht mehr so müde wie früher. Mein Energielevel im Büro ist deutlich höher, und ich schlafe nachts viel besser durch. Auch mein Hautbild hat sich merklich gebessert.\n\nAm kommenden Sonntag will ich ein veganes Dreigänge-Menü kochen und habe ein paar Freunde eingeladen. Es gibt Tomatensuppe, Kürbis-Curry mit Kokosmilch und Schokomousse aus Seidentofu. Hast du nicht Lust, mit dem ICE rüberzukommen und mitzuessen?\n\nGanz liebe Grüße\nFelix",
+    "emailSignoff": "Ganz liebe Grüße\nFelix",
+    "authorLocation": "Berlin",
+    "beispiel": {
+      "statement": "Felix hat sich früher schon immer rein vegan ernährt.",
+      "answer": "Falsch"
+    },
+    "items": [
+      {
+        "id": "e3-t1-1",
+        "number": 1,
+        "statement": "Felix entschied sich wegen einer Wette zu der Ernährungsumstellung.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e3-t1-2",
+        "number": 2,
+        "statement": "Der Einkauf im Supermarkt fiel Felix von Anfang an kinderleicht.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e3-t1-3",
+        "number": 3,
+        "statement": "Felix kocht Rezepte aus einem Buch, das er von einem Kollegen bekommen hat.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e3-t1-4",
+        "number": 4,
+        "statement": "Felix bemerkt durch das neue Essen positive Veränderungen an seinem Körper.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e3-t1-5",
+        "number": 5,
+        "statement": "Felix plant für Sonntag einen Restaurantbesuch mit seinen Freunden.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e3-t1-6",
+        "number": 6,
+        "statement": "Katrin wird von Felix eingeladen, am Sonntag vorbeizukommen.",
+        "correctAnswer": "Richtig"
+      }
+    ]
+  },
+  "teil2": {
+    "workTimeMinutes": 20,
+    "instruction": "Lesen Sie den Text aus der Presse und die Aufgaben dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "textA": {
+      "title": "Zukunft auf dem Teller",
+      "kicker": "Pflanzliche Fleischalternativen erobern deutsche Supermärkte",
+      "source": "aus einer deutschen Wirtschaftszeitung",
+      "bodyParagraphs": [
+        "Produkte aus Erbsenprotein, Soja und Hafer sind in Deutschland längst kein Nischenprodukt für strikte Vegetarier mehr. Laut dem Statistischen Bundesamt stieg die Produktion von Fleischersatzprodukten im vergangenen Jahr um knapp siebzehn Prozent, während der traditionelle Fleischkonsum den niedrigsten Stand seit Beginn der Aufzeichnungen erreichte.",
+        "Immer mehr sogenannte „Flexitarier“ greifen zu pflanzlichen Burgern und Schnitzeln. Das sind Menschen, die nicht gänzlich auf Fleisch verzichten, ihren Konsum aber aus Gründen des Klimaschutzes, des Tierwohls oder der eigenen Gesundheit bewusst reduzieren möchten.",
+        "Ernährungsexperten mahnen jedoch zur Aufmerksamkeit: Nicht jedes vegane Produkt ist automatisch gesund. Viele Fertiggerichte enthalten hohe Mengen an Salz, künstlichen Aromen und gesättigten Fetten. Wer sich nachhaltig ernähren will, sollte primär auf unverarbeitete Hülsenfrüchte, Nüsse und regionales Gemüse setzen."
+      ],
+      "beispiel": {
+        "question": "Die Produktion von pflanzlichen Ersatzprodukten ...",
+        "options": {
+          "a": "ging im letzten Jahr leicht zurück.",
+          "b": "ist deutlich gestiegen.",
+          "c": "ist nur bei Jugendlichen gefragt."
+        },
+        "answer": "b"
+      },
+      "items": [
+        {
+          "id": "e3-t2-7",
+          "number": 7,
+          "question": "Als Flexitarier bezeichnet man Personen, die ...",
+          "options": {
+            "a": "nur Fleisch aus eigener Haltung essen.",
+            "b": "ihren Fleischkonsum bewusst einschränken.",
+            "c": "ausschließlich rohe Gemüsesorten zu sich nehmen."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e3-t2-8",
+          "number": 8,
+          "question": "Fachleute für Ernährung weisen darauf hin, dass ...",
+          "options": {
+            "a": "verarbeitete Ersatzprodukte oft viel Salz und Fett enthalten.",
+            "b": "pflanzliche Nahrungsmittel immer zu wenig Vitamine liefern.",
+            "c": "Bio-Fleisch viel gesünder als Hülsenfrüchte ist."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e3-t2-9",
+          "number": 9,
+          "question": "Für eine wirklich gesunde Ernährung empfehlen Experten vor allem ...",
+          "options": {
+            "a": "nur noch Fertiggerichte aus dem Reformhaus zu kaufen.",
+            "b": "frische, unverarbeitete pflanzliche Grundnahrungsmittel.",
+            "c": "den Fleischkonsum auf das Wochenende zu verschieben."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    },
+    "textB": {
+      "title": "Gerettet statt weggeworfen",
+      "kicker": "Mitmach-Supermärkte in Wien sagen Lebensmittelverschwendung den Kampf an",
+      "source": "aus einem österreichischen Magazin",
+      "bodyParagraphs": [
+        "In Österreich landen jährlich über eine halbe Million Tonnen genießbare Lebensmittel im Müll – oft nur, weil das Mindesthaltbarkeitsdatum naht oder eine Gurke zu krumm gewachsen ist. Das Wiener Projekt „Rettungskorb“ setzt genau hier an.",
+        "In den Filialen des Vereins werden einwandfreie Lebensmittel angeboten, die herkömmliche Supermärkte aussortiert haben. Die Kunden bestimmen den Preis selbst: Nach dem Prinzip „Zahl, was es dir wert ist“ wirft jeder Kunde einen frei gewählten Betrag in die Kasse.",
+        "„Damit ermöglichen wir Menschen mit kleinem Budget einen günstigen Einkauf und retten gleichzeitig wertvolle Ressourcen“, erklärt Initiatorin Veronika Hofer. Über sechzig Tonnen Gemüse, Brot und Molkereiprodukte konnten so im letzten Halbjahr vor der Mülltonne bewahrt werden."
+      ],
+      "items": [
+        {
+          "id": "e3-t2-10",
+          "number": 10,
+          "question": "Das Projekt „Rettungskorb“ bietet Lebensmittel an, die ...",
+          "options": {
+            "a": "aus fernen Ländern importiert wurden.",
+            "b": "von anderen Märkten aussortiert wurden, aber noch gut sind.",
+            "c": "bereits seit mehreren Monaten abgelaufen sind."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e3-t2-11",
+          "number": 11,
+          "question": "Wie bezahlt man in den Geschäften von „Rettungskorb“?",
+          "options": {
+            "a": "Jeder Kunde zahlt den Betrag, den er für angemessen hält.",
+            "b": "Man muss Mitgliedsbeiträge für ein ganzes Jahr entrichten.",
+            "c": "Die Preise sind genau dreißig Prozent günstiger als im Supermarkt."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e3-t2-12",
+          "number": 12,
+          "question": "Laut Veronika Hofer hilft das Projekt ...",
+          "options": {
+            "a": "vor allem wohlhabenden Gourmets bei Spezialitäten.",
+            "b": "sowohl bedürftigen Menschen als auch der Umwelt.",
+            "c": "Landwirten bei der Zucht neuer Gemüsesorten."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    }
+  },
+  "teil3": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen A bis J aus verschiedenen deutschsprachigen Medien. Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall schreiben Sie 0.",
+    "contextDescription": "Personen suchen nach Angeboten rund um Kochen, Bio-Lebensmittel und gesunde Ernährung.",
+    "beispiel": {
+      "situation": "Monika möchte lernen, wie man traditionelles Sauerteigbrot selbst backt.",
+      "answer": "c"
+    },
+    "situations": [
+      {
+        "id": "e3-t3-13",
+        "number": 13,
+        "situation": "Julian möchte wöchentlich eine Kiste mit frischem Bio-Gemüse direkt vom Bauernhof nach Hause geliefert bekommen.",
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e3-t3-14",
+        "number": 14,
+        "situation": "Selina sucht einen Abend-Kochkurs für vegane asiatische Küche.",
+        "correctAnswer": "f"
+      },
+      {
+        "id": "e3-t3-15",
+        "number": 15,
+        "situation": "Fabian möchte alte Obstbäume auf einer Streuobstwiese pachten und selbst ernten.",
+        "correctAnswer": "d"
+      },
+      {
+        "id": "e3-t3-16",
+        "number": 16,
+        "situation": "Eva sucht einen Nebenjob im Verkauf in einem verpackungsfreien Supermarkt.",
+        "correctAnswer": "h"
+      },
+      {
+        "id": "e3-t3-17",
+        "number": 17,
+        "situation": "Markus sucht ein Restaurant, das ausschließlich glutenfreie Gerichte serviert.",
+        "correctAnswer": "0"
+      },
+      {
+        "id": "e3-t3-18",
+        "number": 18,
+        "situation": "Larissa möchte an einem Workshop über Kräuterwanderungen und Wildpflanzen teilnehmen.",
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e3-t3-19",
+        "number": 19,
+        "situation": "Dennis sucht eine mobile Saftpresse, die seine eigenen Äpfel zu Saft verarbeitet.",
+        "correctAnswer": "g"
+      }
+    ],
+    "unusedAdLetter": "e",
+    "advertisements": [
+      {
+        "id": "ad-3a",
+        "letter": "a",
+        "title": "Die grüne Kiste: Bio direkt ins Haus",
+        "body": "Biolandhof Havelland liefert wöchentlich knackfrisches saisonales Gemüse, Obst und Kräuter direkt an Ihre Haustür. Flexible Lieferpausen, 100% ökologischer Anbau ohne Spritzmittel.",
+        "contact": "www.die-gruene-biokiste.de | Tel. 0331-889900",
+        "rotationDeg": 0.7
+      },
+      {
+        "id": "ad-3b",
+        "letter": "b",
+        "title": "Wildkräuter-Seminar im Grunewald",
+        "body": "Lernen Sie essbare Wildkräuter, Heilpflanzen und Beeren in unserer Natur kennen! Mit Kräuterpädagogin Anna Sommer. Inklusive Zubereitung eines frischen Wildkräuter-Pestos.",
+        "contact": "kontakt@wildkraeuter-berlin.de",
+        "rotationDeg": -1.2
+      },
+      {
+        "id": "ad-3c",
+        "letter": "c",
+        "title": "Beispiel: Sauerteig-Backkurs am Holzofen",
+        "body": "Duftendes Brot ohne Hefe! Erlernen Sie die Kunst der traditionellen Teigführung mit echtem Roggensauerteig. Jeder Teilnehmer nimmt seinen eigenen Laib mit nach Hause.",
+        "contact": "Bäckerei Meisterbrot, www.meisterbrot-kurse.de",
+        "rotationDeg": 0
+      },
+      {
+        "id": "ad-3d",
+        "letter": "d",
+        "title": "Baumpaten für Streuobstwiese gesucht",
+        "body": "Pachten Sie Ihren persönlichen Apfel- oder Birnenbaum für eine Saison im Brandenburger Umland! Sie pflegen und ernten Ihre eigenen ungespritzten Früchte im Herbst.",
+        "contact": "info@streuobst-patenschaft.org",
+        "rotationDeg": 1.4
+      },
+      {
+        "id": "ad-3e",
+        "letter": "e",
+        "title": "Gourmet-Käseseminar & Weinprobe",
+        "body": "Entdecken Sie handwerkliche Rohmilchkäse aus Frankreich und der Schweiz in Kombination mit erlesenen Bioweinen. Nur für Erwachsene ab 18 Jahren.",
+        "contact": "feinkost-weber@berlin-kulinarisch.de",
+        "rotationDeg": -2.1
+      },
+      {
+        "id": "ad-3f",
+        "letter": "f",
+        "title": "Vegane Asia-Küche: Wok & Dim Sum",
+        "body": "Entdecken Sie thailändische und vietnamesische Aromen ganz ohne Fleisch und Fischsauce! Abendkurs dienstags von 18:30 bis 21:30 Uhr in der Kochschule Kreuzberg.",
+        "contact": "anmeldung@kreuzberg-kocht.de | Tel. 030-612233",
+        "rotationDeg": -0.6
+      },
+      {
+        "id": "ad-3g",
+        "letter": "g",
+        "title": "Mobile Apfelsaftpresse kommt zu Ihnen!",
+        "body": "Haben Sie viele Äpfel im Garten? Wir kommen mit unserer mobilen Mosterei und pressen vor Ort aus Ihrem Lieblingsobst pasteurisierten, haltbaren Saft.",
+        "contact": "Tel. 0171-5544332 | www.obstpresse-mobil.de",
+        "rotationDeg": 1.8
+      },
+      {
+        "id": "ad-3h",
+        "letter": "h",
+        "title": "Aushilfe im Unverpackt-Laden gesucht",
+        "body": "Unser Unverpackt-Laden in Friedrichshain sucht ab sofort eine freundliche Verkaufskraft (15–20 Std./Woche). Du wiegst Waren ab, berätst Kunden und füllst Gläser auf.",
+        "contact": "bewerbung@ohne-muell-berlin.de",
+        "rotationDeg": -1.1
+      },
+      {
+        "id": "ad-3i",
+        "letter": "i",
+        "title": "Foodtruck-Festival am Potsdamer Platz",
+        "body": "Über 40 Stände mit Streetfood aus aller Welt: Burger, Tacos, Falafel, Churros und Craft-Beer. Samstag und Sonntag von 12 bis 22 Uhr. Eintritt frei!",
+        "contact": "www.berlin-streetfood-festival.com",
+        "rotationDeg": 0.9
+      },
+      {
+        "id": "ad-3j",
+        "letter": "j",
+        "title": "Fermentieren leicht gemacht: Kimchi & Co.",
+        "body": "Erlernen Sie gesunde Haltbarmachung von Gemüse mit Milchsäurebakterien. Tages-Workshop am Samstag inklusive Starterkultur und Rezeptheft.",
+        "contact": "ferment@kuechenwerkstatt.de",
+        "rotationDeg": 1.2
+      }
+    ]
+  },
+  "teil4": {
+    "workTimeMinutes": 15,
+    "instruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für einen fleischfreien Tag pro Woche in öffentlichen Kantinen und Mensen? Ja oder Nein?",
+    "contextTopic": "In einer deutschen Tageszeitung lesen Sie Leserbriefe zum Thema „Einführung eines wöchentlichen Veggie-Days in Kantinen und Schulmensen?“",
+    "questionFraming": "Ist die Person für einen fleischfreien Tag in Kantinen?",
+    "beispiel": {
+      "author": "Cornelia",
+      "age": 46,
+      "city": "Potsdam",
+      "text": "Ein Tag in der Woche ohne Fleisch tut der Gesundheit gut und schont das Klima. Wenn Großküchen zeigen, wie lecker vegetarische Gerichte sein können, profitiert jeder davon. Ich befürworte die Idee voll und ganz.",
+      "answer": "Ja"
+    },
+    "leserbriefe": [
+      {
+        "id": "e3-t4-20",
+        "number": 20,
+        "author": "Volker",
+        "age": 58,
+        "city": "Magdeburg",
+        "text": "Niemand hat mir vorzuschreiben, was ich in meiner Mittagspause esse. Ich bin erwachsen und möchte selbst entscheiden, ob auf meinem Teller Schnitzel oder Salat liegt. Staatliche Erziehungsmaßnahmen lehne ich ab.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e3-t4-21",
+        "number": 21,
+        "author": "Miriam",
+        "age": 27,
+        "city": "Jena",
+        "text": "Die Massentierhaltung ist einer der größten Treiber der Klimakrise. Wenn öffentliche Einrichtungen mit gutem Beispiel vorangehen, senkt das die CO2-Emissionen spürbar. Ein fleischfreier Tag ist das Mindeste, was wir tun können.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e3-t4-22",
+        "number": 22,
+        "author": "Uwe",
+        "age": 41,
+        "city": "Cottbus",
+        "text": "Wer vegetarisch essen will, hat doch schon heute jeden Tag eine Alternative am Menüplan. Ein generelles Verbot von Fleisch an einem bestimmten Tag führt nur dazu, dass die Leute zum Dönerladen nebenan rennen.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e3-t4-23",
+        "number": 23,
+        "author": "Simone",
+        "age": 33,
+        "city": "Erfurt",
+        "text": "In unserer Firmenkantine gibt es seit einem Monat den Veggie-Donnerstag. Die Köche geben sich fantastische Mühe mit bunten Bowls und Currys. Selbst skeptische Kollegen sind mittlerweile begeistert. Das sollte überall Standard sein.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e3-t4-24",
+        "number": 24,
+        "author": "Jürgen",
+        "age": 63,
+        "city": "Schwerin",
+        "text": "Auf dem Bau oder im Straßenbau braucht man nach harter körperlicher Arbeit eine kräftige Mahlzeit mit Fleisch. Ein Gemüseeintopf reicht für schwere Arbeit einfach nicht aus. Kantinen sollten alle Wünsche bedienen.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e3-t4-25",
+        "number": 25,
+        "author": "Anja",
+        "age": 22,
+        "city": "Rostock",
+        "text": "Vor allem in Schulen halte ich das für absolut sinnvoll. Kinder lernen so frühzeitig, dass gesundes Essen bunt und vielseitig ist und nicht immer Fleisch enthalten muss. Das schützt vor späterem Übergewicht.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e3-t4-26",
+        "number": 26,
+        "author": "Torsten",
+        "age": 39,
+        "city": "Gera",
+        "text": "Politiker sollten sich um Bildung und Straßen kümmern, statt in den Speiseplan der Bürger einzugreifen. Solche Verbotsdebatten spalten die Gesellschaft nur unnötig und erzeugen Trotzreaktionen.",
+        "correctAnswer": "Nein"
+      }
+    ]
+  },
+  "teil5": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "contextSituation": "Sie mieten einen Schrebergarten im Kleingartenverein „Sonnenland“ und informieren sich über die Gartenordnung.",
+    "sheetTitle": "GARTENORDNUNG KLEINGARTENVEREIN SONNENLAND E.V.",
+    "sheetSubtitle": "Regeln für die Bewirtschaftung und Nutzung der Parzellen",
+    "sections": [
+      {
+        "title": "Kleingärtnerische Nutzung & Anbau",
+        "content": "Jede Parzelle muss zu mindestens einem Drittel der Fläche für den erwerbslosen Anbau von Obst, Gemüse und Kräutern genutzt werden (Drittel-Regelung). Reine Zierrasenflächen ohne Nutzpflanzenanbau sind nicht gestattet. Der Einsatz chemischer Pflanzenschutzmittel und synthetischer Dünger ist im Sinne des biologischen Gärtnerns auf dem gesamten Vereinsgelände untersagt."
+      },
+      {
+        "title": "Lauben, Bauten & Übernachtung",
+        "content": "Gartenlauben dürfen eine Grundfläche von maximal 24 Quadratmetern einschließlich überdachtem Freisitz nicht überschreiten. Ein dauerhafter Wohnsitz in der Laube ist gesetzlich verboten. Gelegentliches Übernachten an Wochenenden und in den Sommerferien ist den Pächtern und ihren Familienangehörigen jedoch gestattet."
+      },
+      {
+        "title": "Ruhezeiten & Geräusche",
+        "content": "Zur Erhaltung der Erholungsfunktion gilt von Montag bis Samstag eine Mittagsruhe von 13:00 bis 15:00 Uhr sowie eine Nachtruhe ab 22:00 Uhr. An Sonn- und Feiertagen ist ganztägig Ruhe einzuhalten. Während der Ruhezeiten ist der Betrieb lauter motorbetriebener Gartengeräte (Rasenmäher, Heckenscheren, Häcksler) strikt verboten."
+      },
+      {
+        "title": "Tierhaltung, Abfälle & offenes Feuer",
+        "content": "Das Halten von Kleintieren (z.B. Hühner, Kaninchen) bedarf der vorherigen Genehmigung des Vorstandes; Hunde sind auf den Hauptwegen des Vereinsgeländes an der Leine zu führen. Das Verbrennen von Gartenabfällen ist grundsätzlich verboten; pflanzliche Reste sind auf dem eigenen Kompost zu verwerten."
+      }
+    ],
+    "items": [
+      {
+        "id": "e3-t5-27",
+        "number": 27,
+        "question": "Auf mindestens einem Drittel der Gartenfläche ...",
+        "options": {
+          "a": "müssen Gemüse, Obst oder Kräuter angebaut werden.",
+          "b": "darf nur englischer Zierrasen gepflegt werden.",
+          "c": "müssen Parkplätze für Fahrräder reserviert sein."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e3-t5-28",
+        "number": 28,
+        "question": "In den Gartenlauben ...",
+        "options": {
+          "a": "darf man seinen festen Erstwohnsitz anmelden.",
+          "b": "ist das Schlafen an Wochenenden im Sommer erlaubt.",
+          "c": "darf man gar keine Möbel aufstellen."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e3-t5-29",
+        "number": 29,
+        "question": "An Sonntagen ...",
+        "options": {
+          "a": "darf man zwischen 15 und 18 Uhr Rasen mähen.",
+          "b": "muss auf dem gesamten Gelände ganztägig Ruhe herrschen.",
+          "c": "ist der Zutritt für Gäste ohne Pächter verboten."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e3-t5-30",
+        "number": 30,
+        "question": "Gartenabfälle wie Äste und Laub ...",
+        "options": {
+          "a": "müssen im Garten auf einem Komposthaufen bleiben.",
+          "b": "dürfen sonntags im Feuer verbrannt werden.",
+          "c": "kann man im Wald neben dem Garten abladen."
+        },
+        "correctAnswer": "a"
+      }
+    ]
+  }
+}

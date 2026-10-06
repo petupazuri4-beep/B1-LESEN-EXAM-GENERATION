@@ -1,0 +1,462 @@
+{
+  "id": "b1-lesen-05",
+  "examNumber": 5,
+  "title": "Übungssatz 05: Bahnreisen, Nachtzüge & Sanfter Tourismus",
+  "theme": "Reisen mit dem Zug & Sanfter Tourismus",
+  "status": "Ready",
+  "updatedAt": "2026-09-28T09:20:00Z",
+  "styleConfig": {
+    "fontFamily": "Source Sans 3",
+    "baseFontSizePt": 10,
+    "lineHeight": 1.4,
+    "headerBarColor": "#d9d9d9",
+    "headerTextColor": "#000000",
+    "accentColor": "#d97706",
+    "marginPreset": "normal"
+  },
+  "candidateInfo": {
+    "institution": "Universität Freiburg / ÖSD",
+    "city": "Freiburg im Breisgau",
+    "examType": "Erwachsene",
+    "centerCode": "DE-BW-25775"
+  },
+  "teil1": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie den Text und die Aufgaben 1 bis 6 dazu. Wählen Sie: Sind die Aussagen Richtig oder Falsch?",
+    "sourceContext": "Manuel schreibt seiner Tante Brigitte über seine Urlaubsreise mit dem Nachtzug nach Rom.",
+    "emailGreeting": "Liebe Tante Brigitte,",
+    "emailBody": "viele liebe Grüße aus Italien! Wie versprochen schreibe ich dir von meiner Reise nach Rom. Weißt du noch, wie skeptisch du warst, als ich dir erzählt habe, dass ich nicht das Flugzeug nehme, sondern den Nachtzug buche? Du dachtest ja, das wäre viel zu unbequem für mich.\n\nIch kann dir sagen: Es war eines der entspanntesten Reiseerlebnisse überhaupt! Ich bin am Freitagabend um 20:15 Uhr in München in den „Nightjet“ der Österreichischen Bundesbahnen eingestiegen. Ich hatte ein Bett im Liegewagen gebucht. Meine Mitreisenden in dem Viererabteil waren zwei nette Studenten aus Schweden und eine italienische Lehrerin. Wir haben uns den ganzen Abend über unsere Reisepläne unterhalten und Snacks geteilt.\n\nDie Betten waren frisch bezogen, und das sanfte Ruckeln des Zuges hat mich nach Mitternacht wunderbar in den Schlaf gewiegt. Morgens um halb acht klopfte der Schaffner an die Tür und brachte ein kleines Frühstück mit Kaffee, Brötchen und Marmelade ans Bett. Als ich aus dem Fenster sah, fuhren wir gerade an den Hügeln der Toskana vorbei.\n\nUm kurz nach neun sind wir pünktlich im Hauptbahnhof Roma Termini angekommen – mitten im Stadtzentrum, ganz ohne stundenlanges Warten am Flughafen oder teure Taxifahrten. Für die Rückfahrt nach Freiburg werde ich definitiv wieder den Zug nehmen!\n\nHerzliche Grüße\nManuel",
+    "emailSignoff": "Herzliche Grüße\nManuel",
+    "authorLocation": "Rom",
+    "beispiel": {
+      "statement": "Manuel ist mit dem Flugzeug nach Rom gereist.",
+      "answer": "Falsch"
+    },
+    "items": [
+      {
+        "id": "e5-t1-1",
+        "number": 1,
+        "statement": "Tante Brigitte riet Manuel im Vorfeld von der Zugreise ab.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e5-t1-2",
+        "number": 2,
+        "statement": "Manuel reiste in einem Abteil ganz für sich allein.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e5-t1-3",
+        "number": 3,
+        "statement": "Das Frühstück im Zug war im Service inbegriffen.",
+        "correctAnswer": "Richtig"
+      },
+      {
+        "id": "e5-t1-4",
+        "number": 4,
+        "statement": "Der Zug hatte bei der Ankunft in Rom erhebliche Verspätung.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e5-t1-5",
+        "number": 5,
+        "statement": "Der Bahnhof in Rom liegt weit außerhalb des Stadtzentrums.",
+        "correctAnswer": "Falsch"
+      },
+      {
+        "id": "e5-t1-6",
+        "number": 6,
+        "statement": "Manuel möchte auch den Rückweg auf der Schiene zurücklegen.",
+        "correctAnswer": "Richtig"
+      }
+    ]
+  },
+  "teil2": {
+    "workTimeMinutes": 20,
+    "instruction": "Lesen Sie den Text aus der Presse und die Aufgaben dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "textA": {
+      "title": "Das Comeback der Nachtzüge",
+      "kicker": "Reisen im Schlaf erfreut sich in ganz Europa neuer Beliebtheit",
+      "source": "aus einer deutschen Reisezeitschrift",
+      "bodyParagraphs": [
+        "Noch vor wenigen Jahren galten europäische Nachtzüge als Auslaufmodell. Viele Eisenbahngesellschaften stellten ihre Strecken wegen starker Billigflugkonkurrenz ein. Heute erlebt die Schiene eine beispiellose Renaissance: Steigendes Klimabewusstsein führt dazu, dass immer mehr Urlauber und Geschäftsreisende das Flugzeug links liegen lassen.",
+        "Vorreiter ist die Österreichische Bundesbahn (ÖBB), die in den vergangenen fünf Jahren ihr Nachtzugnetz auf über dreißig europäische Metropolen ausgeweitet hat. Neue Züge mit Minisuiten für Alleinreisende bieten mehr Komfort und Privatsphäre.",
+        "Dennoch gibt es Herausforderungen: Hohe Trassenpreise für Schienenwege in einigen Ländern und unterschiedliche Signalsysteme an den Grenzen verteuern die Tickets. Verbraucherschützer fordern daher eine europaweite Senkung der Steuern auf Bahnfahrkarten."
+      ],
+      "beispiel": {
+        "question": "In den letzten Jahren ...",
+        "options": {
+          "a": "wurden alle Nachtzugstrecken in Europa stillgelegt.",
+          "b": "sind Nachtzüge wieder sehr populär geworden.",
+          "c": "reisen nur noch Senioren mit der Eisenbahn."
+        },
+        "answer": "b"
+      },
+      "items": [
+        {
+          "id": "e5-t2-7",
+          "number": 7,
+          "question": "Warum wählen heute viele Reisende den Nachtzug statt eines Flugs?",
+          "options": {
+            "a": "Weil Flüge grundsätzlich verboten wurden.",
+            "b": "Weil ihnen Umwelt- und Klimaschutz wichtig sind.",
+            "c": "Weil Nachtzüge immer schneller als Flugzeuge sind."
+          },
+          "correctAnswer": "b"
+        },
+        {
+          "id": "e5-t2-8",
+          "number": 8,
+          "question": "Die neuen Züge der ÖBB ...",
+          "options": {
+            "a": "bieten Einzelabteile mit mehr Privatsphäre.",
+            "b": "verkehren ausschließlich innerhalb Österreichs.",
+            "c": "haben keine Schlafplätze mehr an Bord."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e5-t2-9",
+          "number": 9,
+          "question": "Verbraucherschützer verlangen von der Politik, ...",
+          "options": {
+            "a": "Bahntickets durch niedrigere Steuern günstiger zu machen.",
+            "b": "die Geschwindigkeit aller Züge zu halbieren.",
+            "c": "den Zugverkehr nachts komplett einzustellen."
+          },
+          "correctAnswer": "a"
+        }
+      ]
+    },
+    "textB": {
+      "title": "Urlaub ohne Auto in den Alpen",
+      "kicker": "Das Schweizer Bergdorf Zermatt setzt seit Jahrzehnten auf autofrei",
+      "source": "aus einer Schweizer Zeitung",
+      "bodyParagraphs": [
+        "Am Fuße des weltberühmten Matterhorns liegt das Schweizer Dorf Zermatt. Bereits seit 1961 ist der Ort für private Autos mit Verbrennungsmotor komplett gesperrt. Gäste reisen mit der Zahnradbahn von Täsch an, wo geräumige Parkhäuser zur Verfügung stehen.",
+        "Im Ort selbst bewegen sich Einheimische und Feriengäste zu Fuß, per Fahrrad oder mit kleinen, leisen Elektro-Taxis fort. Die Luftqualität ist hervorragend, und die Straßen laden zum gefahrlosen Flanieren ein.",
+        "„Unsere Gäste schätzen vor allem die himmlische Ruhe“, erklärt Tourismusdirektor Martin Rossi. Zermatt gilt heute weltweit als Pionier des sanften und umweltfreundlichen Alpentourismus."
+      ],
+      "items": [
+        {
+          "id": "e5-t2-10",
+          "number": 10,
+          "question": "In Zermatt ...",
+          "options": {
+            "a": "dürfen Touristen seit 1961 nicht mehr mit normalen Autos fahren.",
+            "b": "muss jeder Urlauber mindestens 10 Kilometer zu Fuß gehen.",
+            "c": "sind auch Fahrräder und Pferdekutschen verboten."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e5-t2-11",
+          "number": 11,
+          "question": "Wie gelangen Besucher vom Parkhaus nach Zermatt?",
+          "options": {
+            "a": "Mit einer speziellen Zahnradbahn.",
+            "b": "Nur mit dem Hubschrauber.",
+            "c": "Mit großen Dieselbussen."
+          },
+          "correctAnswer": "a"
+        },
+        {
+          "id": "e5-t2-12",
+          "number": 12,
+          "question": "Was gefällt den Feriengästen laut Martin Rossi am meisten?",
+          "options": {
+            "a": "Die günstigen Einkaufsmöglichkeiten in Boutiquen.",
+            "b": "Die ruhige und abgasfreie Atmosphäre.",
+            "c": "Die vielen modernen Autobahnen rund um das Dorf."
+          },
+          "correctAnswer": "b"
+        }
+      ]
+    }
+  },
+  "teil3": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Situationen 13 bis 19 und die Anzeigen A bis J aus verschiedenen deutschsprachigen Medien. Wählen Sie: Welche Anzeige passt zu welcher Situation? Sie können jede Anzeige nur einmal verwenden. Die Anzeige aus dem Beispiel können Sie nicht mehr verwenden. Für eine Situation gibt es keine passende Anzeige. In diesem Fall schreiben Sie 0.",
+    "contextDescription": "Urlauber und Reisende suchen nach passenden Transport- und Reiseangeboten in Mitteleuropa.",
+    "beispiel": {
+      "situation": "Lukas sucht eine Interrail-Jugendkarte für eine vierwöchige Zugreise durch Europa.",
+      "answer": "c"
+    },
+    "situations": [
+      {
+        "id": "e5-t3-13",
+        "number": 13,
+        "situation": "Familie Meier möchte ihre Fahrräder im Zug mit nach Südtirol nehmen und sucht ein Radticket.",
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e5-t3-14",
+        "number": 14,
+        "situation": "Corinna möchte ein ganzes Wochenende lang unbegrenzt mit allen Zügen in der Schweiz reisen.",
+        "correctAnswer": "d"
+      },
+      {
+        "id": "e5-t3-15",
+        "number": 15,
+        "situation": "Markus sucht eine geführte Wandertour mit Eseln für seine beiden Kinder.",
+        "correctAnswer": "g"
+      },
+      {
+        "id": "e5-t3-16",
+        "number": 16,
+        "situation": "Jonas sucht einen Mietwagen mit Elektroantrieb am Bahnhof München für zwei Tage.",
+        "correctAnswer": "h"
+      },
+      {
+        "id": "e5-t3-17",
+        "number": 17,
+        "situation": "Sarah möchte mit einem nostalgischen Dampfzug durch den Schwarzwald fahren.",
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e5-t3-18",
+        "number": 18,
+        "situation": "Timo sucht eine günstige Kreuzfahrt auf dem Mittelmeer für den Herbst.",
+        "correctAnswer": "0"
+      },
+      {
+        "id": "e5-t3-19",
+        "number": 19,
+        "situation": "Melanie sucht ein Hotel in den Bergen mit kostenlosem Gepäcktransport vom Bahnhof.",
+        "correctAnswer": "f"
+      }
+    ],
+    "unusedAdLetter": "e",
+    "advertisements": [
+      {
+        "id": "ad-5a",
+        "letter": "a",
+        "title": "Fahrrad-Mitnahme im Eurocity nach Italien",
+        "body": "Nehmen Sie Ihr Rad einfach mit in den Urlaub! Täglich direkte Eurocity-Verbindungen von München nach Bozen und Venedig. Fahrradstellplatz-Reservierung ab 12 €.",
+        "contact": "www.bahn.de/fahrrad-italien | Tel. 030-2970",
+        "rotationDeg": -1.4
+      },
+      {
+        "id": "ad-5b",
+        "letter": "b",
+        "title": "Historische Schwarzwald-Dampfbahn",
+        "body": "Erleben Sie Eisenbahnromantik wie vor 100 Jahren! Fahrten mit originalen Dampflokomotiven über spektakuläre Viadukte von Titisee nach Seebrugg jeden Sonntag.",
+        "contact": "dampf@schwarzwaldbahn-verein.de",
+        "rotationDeg": 1.1
+      },
+      {
+        "id": "ad-5c",
+        "letter": "c",
+        "title": "Beispiel: Interrail Global Pass",
+        "body": "33 Länder mit einem Ticket entdecken! Rabatte für Jugendliche unter 28 Jahren. Gültig für 1 Monat freie Fahrt auf fast allen europäischen Schienenstrecken.",
+        "contact": "www.interrail.eu",
+        "rotationDeg": 0
+      },
+      {
+        "id": "ad-5d",
+        "letter": "d",
+        "title": "Swiss Travel Pass: Freie Fahrt im ganzen Land",
+        "body": "Unbegrenzte Fahrten mit Zügen, Bussen und Schiffen im gesamten Schweizer Verkehrsnetz sowie freier Eintritt in über 500 Museen. 3, 4, 6 oder 8 Tage wählbar.",
+        "contact": "www.sbb.ch/swisstravelpass",
+        "rotationDeg": -0.9
+      },
+      {
+        "id": "ad-5e",
+        "letter": "e",
+        "title": "Wohnmobil-Vermietung Alpentour",
+        "body": "Moderne Campingbusse für 2 bis 4 Personen. Voll ausgestattet mit Küche, Markise und Dusche. Frühbucherrabatt für die Nebensaison.",
+        "contact": "info@alpen-camper-verleih.de",
+        "rotationDeg": 2.2
+      },
+      {
+        "id": "ad-5f",
+        "letter": "f",
+        "title": "Bio-Berghotel Edelweiß in Graubünden",
+        "body": "Nachhaltiger Urlaub ohne Hektik! 100% Bio-Küche, Wellnessbereich aus Zirbenholz. Inklusive kostenlosem Shuttle- und Gepäckservice direkt vom Bahnhof Chur.",
+        "contact": "www.hotel-edelweiss-berge.ch",
+        "rotationDeg": -1.6
+      },
+      {
+        "id": "ad-5g",
+        "letter": "g",
+        "title": "Esel-Trekking im Naturpark Altmühltal",
+        "body": "Ein unvergessliches Familienabenteuer! Die gutmütigen Esel tragen das Gepäck der Kinder. Geführte Wochenendtouren für Eltern mit Kindern ab 6 Jahren.",
+        "contact": "eselwandern@naturpark-erleben.de",
+        "rotationDeg": 0.8
+      },
+      {
+        "id": "ad-5h",
+        "letter": "h",
+        "title": "StadtFlitzer: E-Carsharing am Hauptbahnhof",
+        "body": "Klimaschonend weiterreisen: Direkt am Ausgang Nord des Münchner Hauptbahnhofs stehen 40 Elektro-PKW bereit. Minutengenaue Abrechnung per App.",
+        "contact": "www.stadtflitzer-sharing.de",
+        "rotationDeg": 1.3
+      },
+      {
+        "id": "ad-5i",
+        "letter": "i",
+        "title": "Kanuwandern auf der Mecklenburgischen Seenplatte",
+        "body": "Paddeln durch unberührte Natur. Bootsverleih, Zeltplätze am Wasser und Rückholservice für Mehrtagestouren.",
+        "contact": "kanu@seenplatte-tour.de",
+        "rotationDeg": -0.7
+      },
+      {
+        "id": "ad-5j",
+        "letter": "j",
+        "title": "Bergführer-Zentrale Zermatt",
+        "body": "Klettersteige und Hochtouren auf 4000er-Gipfel mit staatlich geprüften Bergführern. Ausrüstungsausleihe vor Ort.",
+        "contact": "info@bergfuehrer-zermatt.ch",
+        "rotationDeg": 1.5
+      }
+    ]
+  },
+  "teil4": {
+    "workTimeMinutes": 15,
+    "instruction": "Lesen Sie die Texte 20 bis 26. Wählen Sie: Ist die Person für ein Verbot von Kurzstreckenflügen unter 500 Kilometern? Ja oder Nein?",
+    "contextTopic": "In einer Schweizer Zeitung lesen Sie Kommentare zum Thema „Verbot von Inlands- und Kurzstreckenflügen zugunsten der Bahn?“",
+    "questionFraming": "Ist die Person für ein Verbot von Kurzstreckenflügen?",
+    "beispiel": {
+      "author": "Matthieu",
+      "age": 42,
+      "city": "Genf",
+      "text": "Ein Flug von Genf nach Zürich verbraucht pro Passagier ein Vielfaches an Treibhausgasen im Vergleich zum Zug. Frankreich hat Inlandsflüge bei guter Zuganbindung bereits verboten. Das ist vernünftig und dringend nachahmenswert.",
+      "answer": "Ja"
+    },
+    "leserbriefe": [
+      {
+        "id": "e5-t4-20",
+        "number": 20,
+        "author": "Urs",
+        "age": 55,
+        "city": "Basel",
+        "text": "Für Geschäftsleute mit internationalen Anschlussflügen sind Zubringerflüge unerlässlich. Wenn man den Flug verbietet, verlagert sich der Verkehr nur an Flughäfen im Ausland. Ein Verbot schwächt unseren Wirtschaftsstandort enorm.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e5-t4-21",
+        "number": 21,
+        "author": "Fabienne",
+        "age": 24,
+        "city": "Bern",
+        "text": "Auf kurzen Distanzen braucht man mit der Bahn oft kaum länger, wenn man die Wartezeiten an den Sicherheitskontrollen am Flughafen einrechnet. Fliegen für so lächerlich kurze Strecken ist reine Umweltzerstörung.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e5-t4-22",
+        "number": 22,
+        "author": "Hanspeter",
+        "age": 63,
+        "city": "Luzern",
+        "text": "Die Bahn in Europa ist unzuverlässig und verspätet sich dauernd. Solange Züge nicht garantiert pünktlich fahren und Züge überfüllt sind, darf man den Bürgern die schnellere Flugalternative nicht wegnehmen.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e5-t4-23",
+        "number": 23,
+        "author": "Nadine",
+        "age": 31,
+        "city": "Lausanne",
+        "text": "Wir haben keine Zeit mehr für halbe Maßnahmen beim Klimaschutz. Kerosin ist immer noch steuerfrei, während Bahntickets teuer besteuert werden. Das Verbot kurzer Flüge ist der schnellste Hebel zur CO2-Reduktion.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e5-t4-24",
+        "number": 24,
+        "author": "Dominik",
+        "age": 39,
+        "city": "St. Gallen",
+        "text": "Freie Marktwirtschaft bedeutet Wahlfreiheit für den Konsumenten. Wenn der Staat anfängt, Reisemittel zu verbieten, ist das der Beginn einer gefährlichen Bevormundungspolitik.",
+        "correctAnswer": "Nein"
+      },
+      {
+        "id": "e5-t4-25",
+        "number": 25,
+        "author": "Céline",
+        "age": 29,
+        "city": "Neuenburg",
+        "text": "Ich fahre fast jede Woche beruflich zwischen Zürich und Frankfurt mit dem ICE. Man kann im Zug entspannt arbeiten oder lesen und kommt mitten in der Stadt an. Niemand braucht auf solchen Strecken ein Flugzeug.",
+        "correctAnswer": "Ja"
+      },
+      {
+        "id": "e5-t4-26",
+        "number": 26,
+        "author": "Beat",
+        "age": 48,
+        "city": "Thun",
+        "text": "Flugzeuge werden in den nächsten Jahren durch synthetische Treibstoffe und Wasserstoff emissionsfrei werden. Technische Innovationen sind die Lösung, nicht Verbote aus der Mottenkiste.",
+        "correctAnswer": "Nein"
+      }
+    ]
+  },
+  "teil5": {
+    "workTimeMinutes": 10,
+    "instruction": "Lesen Sie die Aufgaben 27 bis 30 und den Text dazu. Wählen Sie bei jeder Aufgabe die richtige Lösung a, b oder c.",
+    "contextSituation": "Sie buchen eine Reise mit dem europäischen Nachtzug und lesen die Beförderungsbedingungen.",
+    "sheetTitle": "BEFÖRDERUNGSBEDINGUNGEN NACHTREISEZÜGE (NIGHTJET)",
+    "sheetSubtitle": "Österreichische Bundesbahnen (ÖBB) Personenverkehr AG",
+    "sections": [
+      {
+        "title": "Check-in, Einstieg & Fahrkartenkontrolle",
+        "content": "Fahrgäste werden gebeten, sich mindestens 15 Minuten vor planmäßiger Abfahrt am Bahnsteig einzufinden. Beim Einstieg sind die Fahrkarte sowie ein amtlicher Lichtbildausweis dem Zugbegleiter unaufgefordert vorzuzeigen. Im Schlafwagen behält der Zugbegleiter die Fahrkarten während der Nacht ein, um Grenzkontrollen ohne Störung der Nachtruhe zu ermöglichen."
+      },
+      {
+        "title": "Nachtruhe & Beleuchtung",
+        "content": "Die allgemeine Nachtruhe gilt in allen Schlafwagen und Liegewagen von 22:00 Uhr bis 07:00 Uhr. In dieser Zeit wird das Hauptlicht in den Abteilen gelöscht; Leselampen dürfen individuell genutzt werden. Telefonieren in den Gängen sowie laute Unterhaltungen sind während der Nachtruhe untersagt."
+      },
+      {
+        "title": "Gepäck & Fahrradbeförderung",
+        "content": "Pro Reisendem dürfen ein Handgepäckstück sowie zwei Koffer kostenfrei mitgeführt werden, sofern sie in den dafür vorgesehenen Gepäckablagen im Abteil verstaut werden können. Die Mitnahme von Fahrrädern ist nur in dafür gekennzeichneten Zügen und ausschließlich mit vorab reservierter Fahrradkarte gestattet."
+      },
+      {
+        "title": "Haustiere & Sonderbestimmungen",
+        "content": "Hunde und andere Kleintiere dürfen nur mitgenommen werden, wenn ein gesamtes Abteil zur Alleinbenutzung gebucht wurde. Für Hunde ist ein gesondertes Zusatzticket erforderlich, und außerhalb des Abteils herrscht Leinen- und Maulkorbpflicht. Ausgenommen von dieser Regelung sind zertifizierte Blindenführhunde."
+      }
+    ],
+    "items": [
+      {
+        "id": "e5-t5-27",
+        "number": 27,
+        "question": "Warum nimmt der Zugbegleiter im Schlafwagen die Tickets an sich?",
+        "options": {
+          "a": "Um sie an das nächste Bahnunternehmen zu verkaufen.",
+          "b": "Damit Fahrgäste bei Grenzkontrollen weiterschlafen können.",
+          "c": "Weil Tickets im Zug sofort ungültig gestempelt werden."
+        },
+        "correctAnswer": "b"
+      },
+      {
+        "id": "e5-t5-28",
+        "number": 28,
+        "question": "Während der Nachtruhe zwischen 22 und 7 Uhr ...",
+        "options": {
+          "a": "müssen alle Passagiere ihre Mobiltelefone ausschalten.",
+          "b": "darf man auf dem Flur telefonieren.",
+          "c": "kann man im Abteil persönliche Leselampen verwenden."
+        },
+        "correctAnswer": "c"
+      },
+      {
+        "id": "e5-t5-29",
+        "number": 29,
+        "question": "Fahrräder dürfen mitgenommen werden, wenn ...",
+        "options": {
+          "a": "man vor der Fahrt eine Reservierung gebucht hat.",
+          "b": "sie in einer Plastiktüte verpackt sind.",
+          "c": "der Schaffner am Bahnsteig spontan zustimmt."
+        },
+        "correctAnswer": "a"
+      },
+      {
+        "id": "e5-t5-30",
+        "number": 30,
+        "question": "Wer einen Hund im Nachtzug mitnehmen möchte, ...",
+        "options": {
+          "a": "muss das Abteil komplett für sich buchen.",
+          "b": "darf den Hund im Schlafwagen frei herumlaufen lassen.",
+          "c": "benötigt kein zusätzliches Ticket für das Tier."
+        },
+        "correctAnswer": "a"
+      }
+    ]
+  }
+}

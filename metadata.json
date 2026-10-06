@@ -1,0 +1,6 @@
+{
+  "name": "B1 Lesen Exam Studio",
+  "description": "Professional Goethe- and ÖSD-Zertifikat B1 mock exam studio with 10 authentic candidate papers, interactive editor, visual answer sheet scanner, and high-fidelity PDF & DOCX export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

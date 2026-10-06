@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#ea580c"/>
+  <rect x="64" y="64" width="384" height="384" rx="64" fill="#0f172a"/>
+  <text x="256" y="296" font-family="system-ui, -apple-system, sans-serif" font-size="172" font-weight="900" fill="#ea580c" text-anchor="middle">B1</text>
+  <text x="256" y="380" font-family="system-ui, -apple-system, sans-serif" font-size="44" font-weight="700" fill="#f8fafc" text-anchor="middle" letter-spacing="4">LESEN STUDIO</text>
+</svg>
