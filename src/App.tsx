@@ -11,7 +11,6 @@ import {
   generateVectorAnswerSheetPdf,
 } from './utils/pdfExport';
 import { Language, translations } from './utils/i18n';
-import { AppThemeId, APP_THEMES } from './utils/theme';
 
 // Components
 import { Header } from './components/Header';
@@ -25,16 +24,12 @@ import { TeacherSplitPreview } from './components/TeacherSplitPreview';
 import { VisualAnswerSheetScanner } from './components/VisualAnswerSheetScanner';
 import { B1LinterPanel } from './components/B1LinterPanel';
 import { KeyDistributionWidget } from './components/KeyDistributionWidget';
-import { StylePanel } from './components/StylePanel';
-import { AppSettingsSection } from './components/AppSettingsSection';
 import { ValidationModal } from './components/ValidationModal';
 import { ProctorProtocolModal } from './components/ProctorProtocolModal';
 import { ExamDownloadModal } from './components/ExamDownloadModal';
 import { AiTestGeneratorModal } from './components/AiTestGeneratorModal';
 import { BottomNavBar } from './components/BottomNavBar';
 import { CbtExamScreenPreview } from './components/CbtExamScreenPreview';
-import { StreamlinedPreviewBar, PreviewMode } from './components/preview/StreamlinedPreviewBar';
-import { AccessibleReaderPreview } from './components/preview/AccessibleReaderPreview';
 import { DigitalExamPreview } from './components/preview/DigitalExamPreview';
 
 // Icons
@@ -71,12 +66,8 @@ export default function App() {
   const [loading, setLoading] = useState<boolean>(true);
   const [isSaving, setIsSaving] = useState<boolean>(false);
   const [activeTab, setActiveTab] = useState<
-    'dashboard' | 'paper' | 'answerSheet' | 'key' | 'split' | 'scanner' | 'editor' | 'test' | 'linter' | 'distribution' | 'style'
+    'dashboard' | 'paper' | 'answerSheet' | 'key' | 'split' | 'scanner' | 'editor' | 'test' | 'linter' | 'distribution'
   >('dashboard');
-
-  // Preview sub-mode for the paper tab
-  const [previewMode, setPreviewMode] = useState<PreviewMode>('paper');
-  const [zoomLevel, setZoomLevel] = useState<number>(100);
 
   // Full-screen CBT mode trigger
   const [isFullScreenCbt, setIsFullScreenCbt] = useState<boolean>(false);
@@ -87,13 +78,10 @@ export default function App() {
   const [showAiGeneratorModal, setShowAiGeneratorModal] = useState<boolean>(false);
   const [showProctorModal, setShowProctorModal] = useState<boolean>(false);
 
-  // Appearance & Theme State
+  // Language state
   const [lang, setLang] = useState<Language>('de');
-  const [themeId, setThemeId] = useState<AppThemeId>('goethe');
-  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   const t = translations[lang];
-  const currentTheme = APP_THEMES[themeId] || APP_THEMES.goethe;
 
   // Refs for PDF capturing
   const examPaperRef = useRef<HTMLDivElement>(null);
@@ -153,8 +141,8 @@ export default function App() {
   };
 
   const handleDownloadCandidatePdf = async (exam: ExamModel) => {
-    // Prefer visible DOM if currently on active unzoomed paper tab, otherwise use dedicated offscreen container
-    const targetEl = (activeTab === 'paper' && previewMode === 'paper' && zoomLevel === 100 && examPaperRef.current)
+    // Prefer visible DOM if currently on active paper tab, otherwise use dedicated offscreen container
+    const targetEl = (activeTab === 'paper' && examPaperRef.current)
       ? examPaperRef.current
       : offscreenCandidateRef.current;
 
@@ -212,7 +200,7 @@ export default function App() {
   };
 
   const handleDownloadZip = async (exam: ExamModel) => {
-    const candidateEl = (activeTab === 'paper' && previewMode === 'paper' && zoomLevel === 100 && examPaperRef.current)
+    const candidateEl = (activeTab === 'paper' && examPaperRef.current)
       ? examPaperRef.current
       : offscreenCandidateRef.current;
 
@@ -311,17 +299,13 @@ export default function App() {
   }
 
   return (
-    <div className={`min-h-screen flex flex-col font-sans transition-colors duration-200 pb-20 sm:pb-24 ${
-      darkMode ? 'bg-slate-950 text-slate-100' : 'bg-slate-100 text-slate-800'
-    }`}>
+    <div className="min-h-screen flex flex-col font-sans bg-slate-900 text-slate-100 pb-20 sm:pb-24">
       {/* 1. TOP HEADER */}
       <Header
         selectedExamTitle={currentExam.title}
         currentExamNumber={currentExam.examNumber}
         lang={lang}
         isSaving={isSaving}
-        themeConfig={currentTheme}
-        darkMode={darkMode}
         onNavigateHome={() => setActiveTab('dashboard')}
       />
 
@@ -377,15 +361,33 @@ export default function App() {
               <span>{lang === 'en' ? 'AI Generator' : 'KI-Generator'}</span>
             </button>
 
-            {/* Language toggle */}
-            <button
-              onClick={() => setLang(lang === 'de' ? 'en' : 'de')}
-              className="px-2 py-1 rounded-lg text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-300 border border-slate-700 flex items-center gap-1 cursor-pointer transition"
-              title="Sprache wechseln / Switch Language"
-            >
-              <Languages className="w-3.5 h-3.5" />
-              <span className="uppercase">{lang}</span>
-            </button>
+            {/* Language toggle pill: DE / EN */}
+            <div className="flex items-center bg-slate-800 rounded-lg p-0.5 border border-slate-700 shrink-0">
+              <button
+                type="button"
+                onClick={() => setLang('de')}
+                className={`px-2 py-0.5 rounded text-xs font-bold transition cursor-pointer ${
+                  lang === 'de'
+                    ? 'bg-orange-600 text-white shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+                title="Deutsch (DE)"
+              >
+                DE
+              </button>
+              <button
+                type="button"
+                onClick={() => setLang('en')}
+                className={`px-2 py-0.5 rounded text-xs font-bold transition cursor-pointer ${
+                  lang === 'en'
+                    ? 'bg-orange-600 text-white shadow-sm'
+                    : 'text-slate-400 hover:text-white'
+                }`}
+                title="English (EN)"
+              >
+                EN
+              </button>
+            </div>
 
             {/* Reset button */}
             <button
@@ -414,7 +416,6 @@ export default function App() {
               { id: 'test', labelDe: 'CBT Simulation', labelEn: 'CBT Simulation', icon: Clock },
               { id: 'linter', labelDe: 'B1-Linter', labelEn: 'B1 Linter', icon: FileCheck2 },
               { id: 'distribution', labelDe: 'Schlüssel-Balance', labelEn: 'Key Distribution', icon: BarChart3 },
-              { id: 'style', labelDe: 'Layout & Stil', labelEn: 'Style & Layout', icon: Sliders },
             ].map((tab) => {
               const Icon = tab.icon;
               const isActive = activeTab === tab.id;
@@ -483,44 +484,37 @@ export default function App() {
           />
         )}
 
-        {/* TAB 1: OFFICIAL EXAM PAPER & PREVIEWS */}
+        {/* TAB 1: OFFICIAL EXAM PAPER */}
         {activeTab === 'paper' && (
           <div className="space-y-6">
-            {/* Streamlined Multi-Modal Preview Bar */}
-            <StreamlinedPreviewBar
-              mode={previewMode}
-              onChangeMode={(m) => setPreviewMode(m)}
-              zoomLevel={zoomLevel}
-              onChangeZoom={(z) => setZoomLevel(z)}
-              onPrint={() => window.print()}
-              lang={lang}
-            />
-
-            {/* Mode 1: A4 Official Paper */}
-            {previewMode === 'paper' && (
-              <div ref={examPaperRef} id="exam-paper-container" style={{ zoom: `${zoomLevel}%` }}>
-                <OfficialExamPaper
-                  exam={currentExam}
-                  lang={lang}
-                  onUpdateExam={handleUpdateCurrentExam}
-                />
+            <div className="no-print bg-slate-900 border border-slate-800 rounded-2xl p-3 shadow-md flex items-center justify-between">
+              <div className="flex items-center gap-2 text-slate-300 text-xs">
+                <FileText className="w-4 h-4 text-orange-500" />
+                <span className="font-bold text-white">
+                  {lang === 'en' ? 'Official Exam Paper (A4)' : 'Offizieller Prüfungsbogen (A4)'}
+                </span>
+                <span className="text-slate-500 hidden sm:inline">•</span>
+                <span className="text-slate-400 hidden sm:inline">
+                  {lang === 'en' ? 'Printable DIN A4 Booklet (Teil 1 – Teil 5)' : 'Druckfertiges DIN A4 Prüfungsheft (Teil 1 – Teil 5)'}
+                </span>
               </div>
-            )}
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 flex items-center gap-1.5 shadow-sm transition cursor-pointer"
+              >
+                <Printer className="w-3.5 h-3.5 text-orange-400" />
+                <span>{lang === 'en' ? 'Print Exam Paper' : 'Prüfungsbogen drucken'}</span>
+              </button>
+            </div>
 
-            {/* Mode 2: Digital CBT Screen */}
-            {previewMode === 'digital' && (
-              <DigitalExamPreview exam={currentExam} lang={lang} />
-            )}
-
-            {/* Mode 3: Split Dual-View */}
-            {previewMode === 'split' && (
-              <TeacherSplitPreview exam={currentExam} lang={lang} />
-            )}
-
-            {/* Mode 4: Accessible Reader */}
-            {previewMode === 'accessible' && (
-              <AccessibleReaderPreview exam={currentExam} lang={lang} />
-            )}
+            <div ref={examPaperRef} id="exam-paper-container">
+              <OfficialExamPaper
+                exam={currentExam}
+                lang={lang}
+                onUpdateExam={handleUpdateCurrentExam}
+              />
+            </div>
           </div>
         )}
 
@@ -616,38 +610,6 @@ export default function App() {
           </div>
         )}
 
-        {/* TAB 10: STYLE & LAYOUT */}
-        {activeTab === 'style' && (
-          <div className="max-w-4xl mx-auto space-y-6">
-            <StylePanel
-              styleConfig={currentExam.styleConfig}
-              onChangeStyle={(newConfig) => {
-                handleUpdateCurrentExam({
-                  ...currentExam,
-                  styleConfig: newConfig,
-                });
-              }}
-              onApplyToAll={() => {
-                const updatedAll = exams.map((e) => ({
-                  ...e,
-                  styleConfig: currentExam.styleConfig,
-                }));
-                setExams(updatedAll);
-                saveAllExams(updatedAll);
-                alert(lang === 'en' ? 'Style applied to all 10 exams!' : 'Stil auf alle 10 Prüfungen übertragen!');
-              }}
-              lang={lang}
-            />
-
-            <AppSettingsSection
-              currentThemeId={themeId}
-              onChangeTheme={(newId) => setThemeId(newId)}
-              darkMode={darkMode}
-              onToggleDarkMode={() => setDarkMode(!darkMode)}
-              lang={lang}
-            />
-          </div>
-        )}
       </main>
 
       {/* 5. BOTTOM NAVIGATION BAR DOCK */}
@@ -665,15 +627,11 @@ export default function App() {
         onOpenExport={() => setShowDownloadModal(true)}
         onOpenValidation={() => setShowValidationModal(true)}
         onTriggerFullScreenCbt={() => setIsFullScreenCbt(true)}
-        previewMode={previewMode}
-        onChangePreviewMode={(mode) => setPreviewMode(mode)}
         onOpenAiGenerator={() => setShowAiGeneratorModal(true)}
         onDownloadAllTenZip={handleDownloadAllTenZip}
         onToggleLang={() => setLang(lang === 'de' ? 'en' : 'de')}
         onResetDefaults={handleResetDefaults}
         onOpenProctorProtocol={() => setShowProctorModal(true)}
-        darkMode={darkMode}
-        onToggleDarkMode={() => setDarkMode(!darkMode)}
       />
 
       {/* 6. MODALS */}

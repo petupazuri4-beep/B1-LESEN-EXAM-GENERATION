@@ -1,14 +1,11 @@
 import React from 'react';
 import { translations, Language } from '../utils/i18n';
-import { AppThemeConfig } from '../utils/theme';
 
 interface Props {
   selectedExamTitle?: string;
   currentExamNumber?: number;
   lang: Language;
   isSaving?: boolean;
-  themeConfig?: AppThemeConfig;
-  darkMode?: boolean;
   onNavigateHome?: () => void;
 }
 
@@ -17,39 +14,25 @@ export const Header: React.FC<Props> = ({
   currentExamNumber = 1,
   lang,
   isSaving = false,
-  themeConfig,
-  darkMode = true,
   onNavigateHome,
 }) => {
   const t = translations[lang];
 
   return (
-    <header
-      className={`sticky top-0 z-40 backdrop-blur border-b transition-colors duration-200 ${
-        darkMode ? 'bg-slate-900/95 border-slate-800 text-slate-100' : 'bg-white/95 border-slate-200 text-slate-800 shadow-sm'
-      }`}
-    >
+    <header className="sticky top-0 z-40 backdrop-blur border-b bg-slate-900/95 border-slate-800 text-slate-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
         {/* Brand & Clean Title */}
         <div
           onClick={onNavigateHome}
           className="flex items-center gap-3 cursor-pointer group select-none"
         >
-          <div
-            className={`w-8 h-8 rounded-lg text-white font-black text-sm flex items-center justify-center shadow-md group-hover:scale-105 transition-transform ${
-              themeConfig ? themeConfig.accentBg : 'bg-orange-600'
-            }`}
-          >
+          <div className="w-8 h-8 rounded-lg text-white font-black text-sm flex items-center justify-center shadow-md group-hover:scale-105 transition-transform bg-orange-600">
             B1
           </div>
           <div>
-            <div className={`font-extrabold text-sm tracking-tight flex items-center gap-2 ${darkMode ? 'text-white' : 'text-slate-900'}`}>
+            <div className="font-extrabold text-sm tracking-tight flex items-center gap-2 text-white">
               <span>{t.studioTitle}</span>
-              <span
-                className={`text-[10px] uppercase font-mono px-1.5 py-0.2 rounded border font-bold ${
-                  themeConfig ? themeConfig.badgeBg : 'bg-amber-500/20 text-amber-300 border-amber-500/30'
-                }`}
-              >
+              <span className="text-[10px] uppercase font-mono px-1.5 py-0.2 rounded border font-bold bg-amber-500/20 text-amber-300 border-amber-500/30">
                 Goethe / ÖSD
               </span>
             </div>

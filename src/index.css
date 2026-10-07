@@ -22,14 +22,17 @@
       max-width: 100% !important;
       margin: 0 !important;
       padding: 0 !important;
+      background: white !important;
     }
     .a4-page {
       page-break-after: always !important;
       break-after: page !important;
-      min-height: 100vh !important;
+      min-height: 297mm !important;
       border: none !important;
       box-shadow: none !important;
-      padding: 1.5cm !important;
+      margin: 0 !important;
+      padding: 18mm 18mm 15mm 18mm !important;
+      box-sizing: border-box !important;
     }
     .answer-key-container {
       box-shadow: none !important;

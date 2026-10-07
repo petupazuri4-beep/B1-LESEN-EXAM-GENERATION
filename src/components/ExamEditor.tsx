@@ -6,8 +6,6 @@ import {
   Teil3Item,
   Leserbrief,
   Teil5Item,
-  SpaceLineConfig,
-  DEFAULT_SPACE_LINE_CONFIG,
 } from '../types/exam';
 import { Language } from '../utils/i18n';
 import { B1LinterPanel } from './B1LinterPanel';
@@ -29,13 +27,8 @@ import {
   MessageSquare,
   ShieldCheck,
   FileText,
-  AlignJustify,
   BookOpen,
   ArrowRightLeft,
-  Settings,
-  Hash,
-  Award,
-  Layers,
 } from 'lucide-react';
 
 interface Props {
@@ -46,7 +39,7 @@ interface Props {
 
 export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' }) => {
   const [activeTab, setActiveTab] = useState<
-    'teil1' | 'teil2' | 'teil3' | 'teil4' | 'teil5' | 'spaceLines' | 'settings' | 'meta'
+    'teil1' | 'teil2' | 'teil3' | 'teil4' | 'teil5' | 'meta'
   >('teil1');
   const [showProctorModal, setShowProctorModal] = useState<boolean>(false);
   const [expandedEvidence, setExpandedEvidence] = useState<Record<string, boolean>>({});
@@ -189,19 +182,6 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
     updateTeil4Letters(shuffled);
   };
 
-  const currentSpaceLines: SpaceLineConfig = exam.styleConfig?.spaceLines || DEFAULT_SPACE_LINE_CONFIG;
-  const updateSpaceLines = (partial: Partial<SpaceLineConfig>) => {
-    const cloned = cloneExam();
-    cloned.styleConfig = {
-      ...cloned.styleConfig,
-      spaceLines: {
-        ...currentSpaceLines,
-        ...partial,
-      },
-    };
-    onUpdateExam(cloned);
-  };
-
   // Teil 4 demographics statistics
   const t4JaCount = exam.teil4.leserbriefe.filter((lb) => lb.correctAnswer === 'Ja').length;
   const t4NeinCount = exam.teil4.leserbriefe.filter((lb) => lb.correctAnswer === 'Nein').length;
@@ -278,28 +258,6 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
           >
             <ShieldCheck className="w-4 h-4" />
             {lang === 'en' ? 'Part 5 (27–30 Rules)' : 'Teil 5 (27–30 Hausordnung)'}
-          </button>
-          <button
-            onClick={() => setActiveTab('spaceLines')}
-            className={`px-3 py-2 rounded-lg flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
-              activeTab === 'spaceLines'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-400 hover:text-white hover:bg-slate-800'
-            }`}
-          >
-            <AlignJustify className="w-4 h-4" />
-            {lang === 'en' ? 'Lines & Scratchpad' : 'Zeilennummer & Notizzeilen'}
-          </button>
-          <button
-            onClick={() => setActiveTab('settings')}
-            className={`px-3 py-2 rounded-lg flex items-center gap-1.5 transition-all whitespace-nowrap cursor-pointer ${
-              activeTab === 'settings'
-                ? 'bg-amber-500 text-slate-950 shadow'
-                : 'text-slate-400 hover:text-white hover:bg-slate-800'
-            }`}
-          >
-            <Settings className="w-4 h-4" />
-            {lang === 'en' ? 'Lesen Settings' : 'Lesen Einstellungen'}
           </button>
           <button
             onClick={() => setActiveTab('meta')}
@@ -1768,373 +1726,57 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
             </div>
           )}
 
-          {/* SPACE LINES & LAYOUT TAB (Zeilennummerierung & Notizzeilen) */}
-          {activeTab === 'spaceLines' && (
-            <div className="space-y-6 max-w-3xl">
-              <div className="border-b border-slate-700 pb-3 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-white text-base">
-                    {lang === 'en' ? 'Line Numbering & Scratchpad Notes' : 'Zeilennummerierung & Notizzeilen'}
-                  </h3>
-                  <p className="text-xs text-slate-400">
-                    {lang === 'en'
-                      ? 'Configure margin line numbers (lines 5, 10, 15...), blank scratchpad note lines, and formatting'
-                      : 'Konfigurieren Sie Zeilennummern am Seitenrand (Zeile 5, 10, 15...), freie Notizzeilen und Wasserzeichen'}
-                  </p>
-                </div>
+          {/* METADATA TAB */}
+          {activeTab === 'meta' && (
+            <div className="space-y-6 max-w-2xl">
+              <div>
+                <h3 className="font-bold text-white text-base">
+                  {lang === 'en' ? 'Metadata & Cover Page' : 'Metadaten & Deckblatt'}
+                </h3>
+                <p className="text-xs text-slate-400 mt-0.5">
+                  {lang === 'en'
+                    ? 'General exam title, theme, and testing institution information.'
+                    : 'Allgemeine Prüfungstitel, Themenfeld und Prüfungsinstitutions-Angaben.'}
+                </p>
               </div>
 
-              {/* Zeilennummerierung */}
-              <div className="p-4 bg-slate-900/90 rounded-xl border border-slate-700 space-y-4">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Hash className="w-4 h-4 text-amber-400" />
-                    <div>
-                      <h4 className="font-bold text-white text-xs">
-                        {lang === 'en'
-                          ? 'Line Numbers for Reading Texts (Margin Line Numbers)'
-                          : 'Zeilennummerierung für Lesetexte (Margin Line Numbers)'}
-                      </h4>
-                      <p className="text-[11px] text-slate-400">
-                        {lang === 'en'
-                          ? 'Shows 5-line interval numbers (5, 10, 15, 20...) along the margin of Parts 1, 2, and 5'
-                          : 'Zeigt 5er-Intervall-Nummern (5, 10, 15, 20...) am Rand von Teil 1, Teil 2 und Teil 5 an'}
-                      </p>
-                    </div>
-                  </div>
+              <div className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold text-slate-300 mb-1">
+                    {lang === 'en' ? 'Exam Title' : 'Prüfungstitel'}
+                  </label>
                   <input
-                    type="checkbox"
-                    checked={currentSpaceLines.showLineNumbers ?? true}
-                    onChange={(e) => updateSpaceLines({ showLineNumbers: e.target.checked })}
-                    className="w-5 h-5 accent-amber-500 rounded cursor-pointer"
+                    type="text"
+                    value={exam.title}
+                    onChange={(e) => {
+                      const cloned = cloneExam();
+                      cloned.title = e.target.value;
+                      onUpdateExam(cloned);
+                    }}
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
                   />
                 </div>
 
-                {currentSpaceLines.showLineNumbers && (
-                  <div className="pt-2 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-                    <div>
-                      <label className="text-[11px] font-semibold text-slate-300 block mb-1">
-                        {lang === 'en' ? 'Line number counting interval:' : 'Zählintervall der Zeilennummern:'}
-                      </label>
-                      <div className="flex items-center gap-2">
-                        {[
-                          { val: 5, label: lang === 'en' ? 'Every 5 lines (5, 10, 15...)' : 'Alle 5 Zeilen (5, 10, 15, 20...)' },
-                          { val: 10, label: lang === 'en' ? 'Every 10 lines (10, 20, 30...)' : 'Alle 10 Zeilen (10, 20, 30...)' },
-                        ].map((opt) => (
-                          <button
-                            key={opt.val}
-                            type="button"
-                            onClick={() => updateSpaceLines({ lineNumbersInterval: opt.val })}
-                            className={`px-3 py-1.5 rounded-lg border text-xs font-mono font-bold cursor-pointer transition-all ${
-                              (currentSpaceLines.lineNumbersInterval || 5) === opt.val
-                                ? 'bg-amber-500 text-slate-950 border-amber-400 shadow'
-                                : 'bg-slate-800 text-slate-300 border-slate-700'
-                            }`}
-                          >
-                            {opt.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="p-3 bg-white text-slate-900 rounded-lg text-[10px] font-sans">
-                      <span className="font-bold block uppercase text-neutral-500 mb-1">
-                        {lang === 'en' ? 'Sample Preview:' : 'Muster-Vorschau:'}
-                      </span>
-                      <div className="relative pl-6 leading-relaxed font-normal">
-                        <span className="absolute left-0 text-neutral-400 font-mono font-bold">5</span>
-                        <div>Liebe Freundinnen und Freunde, gestern bin ich endlich...</div>
-                        <div className="text-neutral-500">angekommen und habe mein neues Zimmer bezogen.</div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-
-              {/* Master Toggle for Scratchpad Note Lines */}
-              <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-700 flex items-center justify-between">
                 <div>
-                  <span className="font-bold text-sm text-white">
-                    {lang === 'en'
-                      ? 'Enable blank scratchpad note lines at the end of each part'
-                      : 'Freie Notizzeilen am Ende jedes Teils aktivieren'}
-                  </span>
-                  <p className="text-xs text-slate-400">
-                    {lang === 'en'
-                      ? 'Allows candidates to write notes and drafts directly on exam sheets'
-                      : 'Erlaubt Kandidaten Notizen und Skizzen auf den Prüfungsblättern'}
-                  </p>
+                  <label className="block text-xs font-semibold text-slate-300 mb-1">
+                    {lang === 'en' ? 'Thematic Topic' : 'Themenfeld'}
+                  </label>
+                  <input
+                    type="text"
+                    value={exam.theme}
+                    onChange={(e) => {
+                      const cloned = cloneExam();
+                      cloned.theme = e.target.value;
+                      onUpdateExam(cloned);
+                    }}
+                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
+                  />
                 </div>
-                <input
-                  type="checkbox"
-                  checked={currentSpaceLines.showNoteLines}
-                  onChange={(e) => updateSpaceLines({ showNoteLines: e.target.checked })}
-                  className="w-5 h-5 accent-amber-500 rounded cursor-pointer"
-                />
-              </div>
 
-              {currentSpaceLines.showNoteLines && (
-                <>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-4 bg-slate-900/60 rounded-xl border border-slate-700">
-                    <div className="space-y-1.5">
-                      <div className="flex justify-between text-xs">
-                        <span className="font-semibold text-slate-300">
-                          {lang === 'en' ? 'Line Count' : 'Zeilenanzahl'}
-                        </span>
-                        <span className="font-mono text-amber-400 font-bold">
-                          {currentSpaceLines.linesCount || 4} {lang === 'en' ? 'lines' : 'Zeilen'}
-                        </span>
-                      </div>
-                      <input
-                        type="range"
-                        min="1"
-                        max="8"
-                        step="1"
-                        value={currentSpaceLines.linesCount || 4}
-                        onChange={(e) => updateSpaceLines({ linesCount: parseInt(e.target.value, 10) })}
-                        className="w-full accent-amber-500 cursor-pointer"
-                      />
-                    </div>
-
-                    <div className="space-y-1.5">
-                      <div className="flex justify-between text-xs">
-                        <span className="font-semibold text-slate-300">
-                          {lang === 'en' ? 'Line Height (Spacing)' : 'Zeilenhöhe (Abstand)'}
-                        </span>
-                        <span className="font-mono text-amber-400 font-bold">{currentSpaceLines.lineSpacingMm || 8} mm</span>
-                      </div>
-                      <input
-                        type="range"
-                        min="5"
-                        max="14"
-                        step="1"
-                        value={currentSpaceLines.lineSpacingMm || 8}
-                        onChange={(e) => updateSpaceLines({ lineSpacingMm: parseInt(e.target.value, 10) })}
-                        className="w-full accent-amber-500 cursor-pointer"
-                      />
-                    </div>
-
-                    <div className="space-y-1.5">
-                      <span className="block text-xs font-semibold text-slate-300">
-                        {lang === 'en' ? 'Line Style' : 'Linienstil'}
-                      </span>
-                      <div className="grid grid-cols-3 gap-1">
-                        {(['dotted', 'dashed', 'solid'] as const).map((style) => (
-                          <button
-                            key={style}
-                            onClick={() => updateSpaceLines({ lineStyle: style })}
-                            className={`py-1.5 text-xs rounded border transition-all cursor-pointer ${
-                              currentSpaceLines.lineStyle === style
-                                ? 'bg-amber-500 text-slate-950 font-bold border-amber-400'
-                                : 'bg-slate-800 text-slate-300 border-slate-700'
-                            }`}
-                          >
-                            {style === 'dotted'
-                              ? (lang === 'en' ? 'Dotted' : 'Gepunktet')
-                              : style === 'dashed'
-                              ? (lang === 'en' ? 'Dashed' : 'Gestrichelt')
-                              : (lang === 'en' ? 'Solid' : 'Linie')}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="p-4 bg-slate-900/60 rounded-xl border border-slate-700 space-y-3">
-                    <span className="block text-xs font-bold text-slate-200">
-                      {lang === 'en' ? 'Enable note lines by exam part:' : 'Notizzeilen nach Prüfungsteilen aktivieren:'}
-                    </span>
-                    <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
-                      {[
-                        { key: 'includeInTeil1', label: lang === 'en' ? 'Part 1' : 'Teil 1' },
-                        { key: 'includeInTeil2', label: lang === 'en' ? 'Part 2 (A & B)' : 'Teil 2 (A & B)' },
-                        { key: 'includeInTeil3', label: lang === 'en' ? 'Part 3' : 'Teil 3' },
-                        { key: 'includeInTeil4', label: lang === 'en' ? 'Part 4' : 'Teil 4' },
-                        { key: 'includeInTeil5', label: lang === 'en' ? 'Part 5' : 'Teil 5' },
-                      ].map(({ key, label }) => {
-                        const isChecked = (currentSpaceLines as any)[key] ?? true;
-                        return (
-                          <label
-                            key={key}
-                            className={`p-2.5 rounded-lg border flex items-center justify-between text-xs cursor-pointer transition-all ${
-                              isChecked
-                                ? 'bg-amber-500/15 border-amber-500/40 text-amber-300'
-                                : 'bg-slate-800 border-slate-700 text-slate-400'
-                            }`}
-                          >
-                            <span className="font-semibold">{label}</span>
-                            <input
-                              type="checkbox"
-                              checked={isChecked}
-                              onChange={(e) => updateSpaceLines({ [key]: e.target.checked })}
-                              className="w-4 h-4 accent-amber-500 rounded cursor-pointer"
-                            />
-                          </label>
-                        );
-                      })}
-                    </div>
-                  </div>
-                </>
-              )}
-            </div>
-          )}
-
-          {/* LESEN SETTINGS TAB */}
-          {activeTab === 'settings' && (
-            <div className="space-y-6 max-w-3xl">
-              <div className="border-b border-slate-700 pb-3 flex items-center justify-between">
-                <div>
-                  <h3 className="font-bold text-white text-base">
-                    {lang === 'en'
-                      ? 'Goethe- / ÖSD-Certificate B1 Reading Settings'
-                      : 'Goethe- / ÖSD-Zertifikat B1 Lesen Einstellungen'}
-                  </h3>
-                  <p className="text-xs text-slate-400">
-                    {lang === 'en'
-                      ? 'Test center metadata, layout presets, answer sheet style, and proctoring protocol'
-                      : 'Prüfungszentrum-Metadaten, Layout-Presets, Antwortbogen-Stil und Aufsichts-Protokoll'}
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setShowProctorModal(true)}
-                  className="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs rounded-xl flex items-center gap-1.5 shadow-md cursor-pointer transition-all"
-                >
-                  <FileText className="w-4 h-4" />
-                  <span>{lang === 'en' ? 'Print Proctoring Script' : 'Aufsichts-Protokoll drucken'}</span>
-                </button>
-              </div>
-
-              {/* 1. Institutional Layout Standard */}
-              <div className="p-4 bg-slate-900 rounded-xl border border-slate-700 space-y-3">
-                <div className="flex items-center gap-2">
-                  <Award className="w-4 h-4 text-orange-500" />
-                  <h4 className="font-bold text-white text-xs">
-                    {lang === 'en' ? 'Official Layout Standard (Exam Authority)' : 'Offizieller Layout-Standard (Prüfungsträger)'}
-                  </h4>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div
-                    onClick={() => updateSpaceLines({ layoutStandard: 'goethe' })}
-                    className={`p-3.5 rounded-xl border cursor-pointer transition-all ${
-                      (currentSpaceLines.layoutStandard || 'goethe') === 'goethe'
-                        ? 'border-orange-500 bg-orange-500/10 text-white ring-1 ring-orange-500'
-                        : 'border-slate-700 bg-slate-800/40 text-slate-400 hover:border-slate-600'
-                    }`}
-                  >
-                    <div className="font-bold text-xs text-white">
-                      {lang === 'en' ? 'Goethe-Institut Standard' : 'Goethe-Institut Standard'}
-                    </div>
-                    <div className="text-[11px] text-slate-400 mt-1">
-                      {lang === 'en'
-                        ? 'Classic German color scheme, official header, standardized typography'
-                        : 'Klassische deutsche Farbgebung, Goethe-Logo Header, standardisierte Schriftgröße'}
-                    </div>
-                  </div>
-                  <div
-                    onClick={() => updateSpaceLines({ layoutStandard: 'osd' })}
-                    className={`p-3.5 rounded-xl border cursor-pointer transition-all ${
-                      currentSpaceLines.layoutStandard === 'osd'
-                        ? 'border-orange-500 bg-orange-500/10 text-white ring-1 ring-orange-500'
-                        : 'border-slate-700 bg-slate-800/40 text-slate-400 hover:border-slate-600'
-                    }`}
-                  >
-                    <div className="font-bold text-xs text-white">
-                      {lang === 'en' ? 'ÖSD (Austrian Language Diploma)' : 'ÖSD (Österreichisches Sprachdiplom)'}
-                    </div>
-                    <div className="text-[11px] text-slate-400 mt-1">
-                      {lang === 'en'
-                        ? 'ÖSD testing center layout with Univ. Fribourg/Switzerland certification seal.'
-                        : 'ÖSD Prüfungsstellen-Layout mit Universität Freiburg/Schweiz Zertifizierungs-Stempel.'}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* 2. Official Answer Sheet Style */}
-              <div className="p-4 bg-slate-900 rounded-xl border border-slate-700 space-y-3">
-                <div className="flex items-center gap-2">
-                  <Layers className="w-4 h-4 text-amber-400" />
-                  <h4 className="font-bold text-white text-xs">
-                    {lang === 'en' ? 'Answer Sheet Style (Scan-Sheet S30)' : 'Antwortbogen-Stil (Scan-Sheet S30)'}
-                  </h4>
-                </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <button
-                    type="button"
-                    onClick={() => updateSpaceLines({ answerSheetStyle: 'checkboxes' })}
-                    className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      (currentSpaceLines.answerSheetStyle || 'checkboxes') === 'checkboxes'
-                        ? 'bg-amber-500 text-slate-950 font-bold border-amber-400 shadow'
-                        : 'bg-slate-800 text-slate-300 border-slate-700'
-                    }`}
-                  >
-                    <div className="text-xs font-bold">
-                      {lang === 'en' ? 'Standard Checkboxes [ ☒ ]' : 'Standard Kästchen [ ☒ ]'}
-                    </div>
-                    <div className="text-[10px] opacity-75">
-                      {lang === 'en'
-                        ? 'Official Goethe answer sheet format with check-boxes'
-                        : 'Offizieller Goethe-Antwortbogen mit Ankreuzfeldern'}
-                    </div>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => updateSpaceLines({ answerSheetStyle: 'bubbles' })}
-                    className={`p-3 rounded-lg border text-left cursor-pointer transition-all ${
-                      currentSpaceLines.answerSheetStyle === 'bubbles'
-                        ? 'bg-amber-500 text-slate-950 font-bold border-amber-400 shadow'
-                        : 'bg-slate-800 text-slate-300 border-slate-700'
-                    }`}
-                  >
-                    <div className="text-xs font-bold">
-                      {lang === 'en' ? 'OMR-Scan Bubble Matrix ( ● )' : 'OMR-Scan Bubble Raster ( ● )'}
-                    </div>
-                    <div className="text-[10px] opacity-75">
-                      {lang === 'en'
-                        ? 'Optical mark reader layout for automated digital grading'
-                        : 'Optische Belegleser-Formatierung für automatisierte Auswertung'}
-                    </div>
-                  </button>
-                </div>
-              </div>
-
-              {/* 3. Pass Mark Threshold */}
-              <div className="p-4 bg-slate-900 rounded-xl border border-slate-700 space-y-3">
-                <div className="flex justify-between items-center text-xs">
-                  <span className="font-bold text-white">
-                    {lang === 'en' ? 'Passing Mark for Module READING:' : 'Bestehensgrenze Modul LESEN (Pass Mark):'}
-                  </span>
-                  <span className="font-mono text-amber-400 font-bold">
-                    {lang === 'en'
-                      ? `${currentSpaceLines.passMarkPoints || 18} of 30 points (60%)`
-                      : `${currentSpaceLines.passMarkPoints || 18} von 30 Punkten (60%)`}
-                  </span>
-                </div>
-                <input
-                  type="range"
-                  min="15"
-                  max="24"
-                  step="1"
-                  value={currentSpaceLines.passMarkPoints || 18}
-                  onChange={(e) => updateSpaceLines({ passMarkPoints: parseInt(e.target.value, 10) })}
-                  className="w-full accent-amber-500 cursor-pointer"
-                />
-                <div className="text-[10px] text-slate-400 italic">
-                  {lang === 'en'
-                    ? 'Standard Goethe/ÖSD guideline: 60% = minimum 18 of 30 raw points (equivalent to 60/100 scaled score).'
-                    : 'Standard Goethe/ÖSD Richtlinie: 60% = mindestens 18 von 30 Rohpunkten (entspricht 60/100 Ergebnispunkten).'}
-                </div>
-              </div>
-
-              {/* 4. Test Center Administration & Metadata Stamping */}
-              <div className="p-4 bg-slate-900 rounded-xl border border-slate-700 space-y-3">
-                <h4 className="font-bold text-white text-xs">
-                  {lang === 'en' ? 'Test Center & Institutional Stamping' : 'Prüfungszentrum & Institutional Stamping'}
-                </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="text-slate-400 text-[10px] block mb-1">
-                      {lang === 'en' ? 'Test Center Name' : 'Prüfungszentrum Name'}
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">
+                      {lang === 'en' ? 'Testing Institution' : 'Prüfungsinstitution'}
                     </label>
                     <input
                       type="text"
@@ -2144,28 +1786,45 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
                         cloned.candidateInfo.institution = e.target.value;
                         onUpdateExam(cloned);
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-xs text-white"
-                      placeholder={lang === 'en' ? 'e.g. Goethe-Center / Testing Center' : 'z.B. Goethe-Zentrum / ÖSD Prüfungsstelle'}
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
                     />
                   </div>
+
                   <div>
-                    <label className="text-slate-400 text-[10px] block mb-1">
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">
+                      {lang === 'en' ? 'Exam Location / City' : 'Prüfungsort / Stadt'}
+                    </label>
+                    <input
+                      type="text"
+                      value={exam.candidateInfo.city}
+                      onChange={(e) => {
+                        const cloned = cloneExam();
+                        cloned.candidateInfo.city = e.target.value;
+                        onUpdateExam(cloned);
+                      }}
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">
                       {lang === 'en' ? 'Center Code / Testing ID' : 'Center Code / Prüfstellen-ID'}
                     </label>
                     <input
                       type="text"
-                      value={exam.candidateInfo.centerCode || 'PZ-8392'}
+                      value={exam.candidateInfo.centerCode || ''}
                       onChange={(e) => {
                         const cloned = cloneExam();
                         cloned.candidateInfo.centerCode = e.target.value;
                         onUpdateExam(cloned);
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-xs text-white font-mono"
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white font-mono"
                       placeholder="z.B. PZ-8392"
                     />
                   </div>
+
                   <div>
-                    <label className="text-slate-400 text-[10px] block mb-1">
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">
                       {lang === 'en' ? 'Proctor Name' : 'Name der Prüfungsaufsicht'}
                     </label>
                     <input
@@ -2176,13 +1835,14 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
                         cloned.candidateInfo.proctorName = e.target.value;
                         onUpdateExam(cloned);
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-xs text-white"
-                      placeholder={lang === 'en' ? 'e.g. Dr. M. Schneider' : 'z.B. Dr. M. Schneider'}
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
+                      placeholder="z.B. Dr. M. Schneider"
                     />
                   </div>
-                  <div>
-                    <label className="text-slate-400 text-[10px] block mb-1">
-                      {lang === 'en' ? 'Exam Room / Test Date' : 'Prüfungsraum / Test Date'}
+
+                  <div className="sm:col-span-2">
+                    <label className="block text-xs font-semibold text-slate-300 mb-1">
+                      {lang === 'en' ? 'Exam Room / Test Date' : 'Prüfungsraum / Prüfungsdatum'}
                     </label>
                     <input
                       type="text"
@@ -2192,81 +1852,10 @@ export const ExamEditor: React.FC<Props> = ({ exam, onUpdateExam, lang = 'de' })
                         cloned.candidateInfo.roomNumber = e.target.value;
                         onUpdateExam(cloned);
                       }}
-                      className="w-full bg-slate-800 border border-slate-700 rounded px-2.5 py-1.5 text-xs text-white"
-                      placeholder={lang === 'en' ? 'e.g. Room 204 • 29.09.2026' : 'z.B. Raum 204 • 29.09.2026'}
+                      className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
+                      placeholder="z.B. Raum 204 • 29.09.2026"
                     />
                   </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* METADATA TAB */}
-          {activeTab === 'meta' && (
-            <div className="space-y-4 max-w-lg">
-              <h3 className="font-bold text-white text-base">
-                {lang === 'en' ? 'Metadata & Cover Page' : 'Metadaten & Deckblatt'}
-              </h3>
-              <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  {lang === 'en' ? 'Exam Title' : 'Prüfungstitel'}
-                </label>
-                <input
-                  type="text"
-                  value={exam.title}
-                  onChange={(e) => {
-                    const cloned = cloneExam();
-                    cloned.title = e.target.value;
-                    onUpdateExam(cloned);
-                  }}
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
-                />
-              </div>
-              <div>
-                <label className="block text-xs font-semibold text-slate-300 mb-1">
-                  {lang === 'en' ? 'Thematic Topic' : 'Themenfeld'}
-                </label>
-                <input
-                  type="text"
-                  value={exam.theme}
-                  onChange={(e) => {
-                    const cloned = cloneExam();
-                    cloned.theme = e.target.value;
-                    onUpdateExam(cloned);
-                  }}
-                  className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
-                />
-              </div>
-              <div className="grid grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1">
-                    {lang === 'en' ? 'Testing Institution' : 'Prüfungsinstitution'}
-                  </label>
-                  <input
-                    type="text"
-                    value={exam.candidateInfo.institution}
-                    onChange={(e) => {
-                      const cloned = cloneExam();
-                      cloned.candidateInfo.institution = e.target.value;
-                      onUpdateExam(cloned);
-                    }}
-                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-semibold text-slate-300 mb-1">
-                    {lang === 'en' ? 'Exam Location / City' : 'Prüfungsort / Stadt'}
-                  </label>
-                  <input
-                    type="text"
-                    value={exam.candidateInfo.city}
-                    onChange={(e) => {
-                      const cloned = cloneExam();
-                      cloned.candidateInfo.city = e.target.value;
-                      onUpdateExam(cloned);
-                    }}
-                    className="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white"
-                  />
                 </div>
               </div>
             </div>

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Language } from '../utils/i18n';
 import { ExamModel } from '../types/exam';
-import { PreviewMode } from './preview/StreamlinedPreviewBar';
 import {
   LayoutDashboard,
   FileText,
@@ -53,15 +52,11 @@ interface Props {
   onOpenExport?: () => void;
   onOpenValidation?: () => void;
   onTriggerFullScreenCbt?: () => void;
-  previewMode?: PreviewMode;
-  onChangePreviewMode?: (mode: PreviewMode) => void;
   onOpenAiGenerator?: () => void;
   onDownloadAllTenZip?: () => void;
   onToggleLang?: () => void;
   onResetDefaults?: () => void;
   onOpenProctorProtocol?: () => void;
-  darkMode?: boolean;
-  onToggleDarkMode?: () => void;
 }
 
 export const BottomNavBar: React.FC<Props> = ({
@@ -78,15 +73,11 @@ export const BottomNavBar: React.FC<Props> = ({
   onOpenExport,
   onOpenValidation,
   onTriggerFullScreenCbt,
-  previewMode = 'paper',
-  onChangePreviewMode,
   onOpenAiGenerator,
   onDownloadAllTenZip,
   onToggleLang,
   onResetDefaults,
   onOpenProctorProtocol,
-  darkMode = false,
-  onToggleDarkMode,
 }) => {
   // State for the slide-up shelf directly above the bottom dock
   const [isShelfOpen, setIsShelfOpen] = useState<boolean>(false);
@@ -102,14 +93,6 @@ export const BottomNavBar: React.FC<Props> = ({
     setTimeout(() => setActionNotice(null), 2500);
   };
 
-  const isExamActive = activeTab === 'paper' || activeTab === 'split';
-  const effectiveMode: PreviewMode = activeTab === 'split' ? 'split' : previewMode;
-
-  const handleSelectExamMode = (mode: PreviewMode) => {
-    onSelectTab('paper');
-    onChangePreviewMode?.(mode);
-  };
-
   // Main navigation tabs (Start button explicitly labeled and primary)
   const navItems = [
     {
@@ -119,6 +102,14 @@ export const BottomNavBar: React.FC<Props> = ({
       shortDe: 'Start',
       shortEn: 'Start',
       icon: LayoutDashboard,
+    },
+    {
+      id: 'paper',
+      labelDe: 'Prüfungsbogen',
+      labelEn: 'Exam Paper',
+      shortDe: 'Bogen',
+      shortEn: 'Paper',
+      icon: FileText,
     },
     {
       id: 'answerSheet',
@@ -135,6 +126,14 @@ export const BottomNavBar: React.FC<Props> = ({
       shortDe: 'Lösung',
       shortEn: 'Key',
       icon: KeyRound,
+    },
+    {
+      id: 'split',
+      labelDe: 'Dualansicht',
+      labelEn: 'Split View',
+      shortDe: 'Dual',
+      shortEn: 'Dual',
+      icon: Split,
     },
     {
       id: 'scanner',
@@ -162,8 +161,8 @@ export const BottomNavBar: React.FC<Props> = ({
     },
     {
       id: 'linter',
-      labelDe: 'B1 Prüfungs-Linter',
-      labelEn: 'B1 Exam Linter',
+      labelDe: 'B1-Linter',
+      labelEn: 'B1 Linter',
       shortDe: 'Linter',
       shortEn: 'Linter',
       icon: FileCheck2,
@@ -172,17 +171,9 @@ export const BottomNavBar: React.FC<Props> = ({
       id: 'distribution',
       labelDe: 'Schlüssel-Balance',
       labelEn: 'Key Balance',
-      shortDe: 'Statistik',
-      shortEn: 'Stats',
+      shortDe: 'Balance',
+      shortEn: 'Balance',
       icon: BarChart3,
-    },
-    {
-      id: 'style',
-      labelDe: 'Layout & Stil',
-      labelEn: 'Style & Layout',
-      shortDe: 'Stil',
-      shortEn: 'Style',
-      icon: Sliders,
     },
   ];
 
@@ -425,35 +416,7 @@ export const BottomNavBar: React.FC<Props> = ({
                 </button>
               )}
 
-              {/* Item 3: Appearance / Dark Mode Toggle */}
-              {onToggleDarkMode && (
-                <button
-                  type="button"
-                  onClick={onToggleDarkMode}
-                  className="w-full p-2.5 rounded-xl bg-slate-800/80 hover:bg-slate-800 border border-slate-700/70 transition flex items-center justify-between gap-3 text-left cursor-pointer group"
-                >
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-8 h-8 rounded-lg bg-indigo-900/50 border border-indigo-600/40 flex items-center justify-center text-indigo-400 shrink-0">
-                      {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
-                    </div>
-                    <div>
-                      <div className="text-xs font-bold text-slate-200">
-                        {lang === 'en' ? 'Theme / Dark Mode' : 'Erscheinungsbild'}
-                      </div>
-                      <div className="text-[10px] text-slate-400">
-                        {darkMode
-                          ? (lang === 'en' ? 'Dark mode enabled • Switch to Light' : 'Dunkelmodus aktiv • Zu Hell wechseln')
-                          : (lang === 'en' ? 'Light mode enabled • Switch to Dark' : 'Hellmodus aktiv • Zu Dunkel wechseln')}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-xs font-semibold text-slate-400">
-                    {darkMode ? 'Dark' : 'Light'}
-                  </div>
-                </button>
-              )}
-
-              {/* Item 4: Exam Reset Functionality (with confirmation safety) */}
+              {/* Item 3: Exam Reset Functionality (with confirmation safety) */}
               {onResetDefaults && (
                 <div className="p-2.5 rounded-xl bg-slate-800/80 border border-slate-700/70 transition">
                   {!showResetConfirm ? (
@@ -593,7 +556,7 @@ export const BottomNavBar: React.FC<Props> = ({
             )}
           </div>
 
-          {/* Center: Primary Navigation Tabs with Integrated "Together / Dual" Segmented Pill */}
+          {/* Center: Primary Navigation Tabs */}
           <nav
             aria-label="Hauptnavigation unten"
             className="flex-1 flex items-center justify-start sm:justify-center gap-1 overflow-x-auto scrollbar-none py-0.5 px-1"
@@ -644,121 +607,7 @@ export const BottomNavBar: React.FC<Props> = ({
               );
             })()}
 
-            {/* 2. CONSOLIDATED EXAM PILL: [ 📄 Einzeln (A4) | 👥 Zusammen (Dual) | 💻 CBT | 👁️ Reader ] */}
-            <div
-              className={`flex items-center shrink-0 rounded-xl p-0.5 sm:p-1 gap-0.5 transition-all ${
-                isExamActive
-                  ? 'bg-slate-800/95 border border-orange-500/50 ring-1 ring-orange-500/30 shadow-md shadow-orange-950/30'
-                  : 'bg-slate-800/60 border border-slate-700/60 hover:border-slate-600'
-              }`}
-            >
-              <div className="hidden xl:flex items-center gap-1 px-1.5 text-slate-400">
-                <Layers className="w-3.5 h-3.5 text-orange-400" />
-                <span className="text-[10px] font-bold uppercase tracking-wider text-slate-300">
-                  {lang === 'en' ? 'Exam' : 'Bogen'}
-                </span>
-              </div>
-
-              {/* Segment 1: Einzeln (A4 Official Paper) */}
-              <button
-                type="button"
-                onClick={() => handleSelectExamMode('paper')}
-                className={`flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer relative ${
-                  isExamActive && effectiveMode === 'paper'
-                    ? 'bg-orange-600 text-white font-bold shadow-sm shadow-orange-600/30 ring-1 ring-orange-400/50'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-700/70'
-                }`}
-                title={
-                  lang === 'en'
-                    ? 'Single A4 Official Exam Paper (Print layout)'
-                    : 'Einzeln: Offizieller A4 Prüfungsbogen (Drucklayout)'
-                }
-              >
-                <FileText className="w-3.5 h-3.5 shrink-0" />
-                <span className="text-[10px] sm:text-[11px] whitespace-nowrap">
-                  <span className="hidden sm:inline">
-                    {lang === 'en' ? 'Single (A4)' : 'Einzeln (A4)'}
-                  </span>
-                  <span className="inline sm:hidden">A4</span>
-                </span>
-                {isExamActive && effectiveMode === 'paper' && (
-                  <span className="absolute -top-1 w-1.5 h-1.5 rounded-full bg-amber-400 ring-2 ring-slate-900" />
-                )}
-              </button>
-
-              {/* Segment 2: Zusammen (Teacher Split Dual-View) */}
-              <button
-                type="button"
-                onClick={() => handleSelectExamMode('split')}
-                className={`flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer relative ${
-                  isExamActive && effectiveMode === 'split'
-                    ? 'bg-gradient-to-r from-orange-600 to-amber-600 text-white font-bold shadow-md shadow-amber-600/30 ring-1 ring-amber-400/60'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-700/70'
-                }`}
-                title={
-                  lang === 'en'
-                    ? 'Together: Synchronized side-by-side reading text and pedagogical rationale'
-                    : 'Zusammen: Lesetext und didaktische Aufgabenanalyse synchron nebeneinander (Dualansicht)'
-                }
-              >
-                <Split className="w-3.5 h-3.5 shrink-0 text-amber-300" />
-                <span className="text-[10px] sm:text-[11px] whitespace-nowrap">
-                  <span className="hidden md:inline">
-                    {lang === 'en' ? 'Together (Dual)' : 'Zusammen (Dual)'}
-                  </span>
-                  <span className="inline md:hidden">Dual</span>
-                </span>
-                {isExamActive && effectiveMode === 'split' && (
-                  <span className="absolute -top-1 w-1.5 h-1.5 rounded-full bg-amber-300 ring-2 ring-slate-900 animate-pulse" />
-                )}
-              </button>
-
-              {/* Segment 3: Digital CBT Screen */}
-              <button
-                type="button"
-                onClick={() => handleSelectExamMode('digital')}
-                className={`hidden sm:flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer relative ${
-                  isExamActive && effectiveMode === 'digital'
-                    ? 'bg-orange-600 text-white font-bold shadow-sm shadow-orange-600/30 ring-1 ring-orange-400/50'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-700/70'
-                }`}
-                title={
-                  lang === 'en'
-                    ? 'Digital CBT Screen Preview'
-                    : 'Digitaler CBT-Prüfungsbildschirm'
-                }
-              >
-                <Monitor className="w-3.5 h-3.5 shrink-0" />
-                <span className="text-[10px] sm:text-[11px] whitespace-nowrap">CBT</span>
-                {isExamActive && effectiveMode === 'digital' && (
-                  <span className="absolute -top-1 w-1.5 h-1.5 rounded-full bg-amber-400 ring-2 ring-slate-900" />
-                )}
-              </button>
-
-              {/* Segment 4: Accessible Reader Mode */}
-              <button
-                type="button"
-                onClick={() => handleSelectExamMode('accessible')}
-                className={`hidden md:flex items-center gap-1 px-2 py-1 sm:px-2.5 sm:py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer relative ${
-                  isExamActive && effectiveMode === 'accessible'
-                    ? 'bg-orange-600 text-white font-bold shadow-sm shadow-orange-600/30 ring-1 ring-orange-400/50'
-                    : 'text-slate-300 hover:text-white hover:bg-slate-700/70'
-                }`}
-                title={
-                  lang === 'en'
-                    ? 'Accessible Reader Mode (High contrast & focus)'
-                    : 'Barrierefreier Lesemodus (Großschrift & Kontrast)'
-                }
-              >
-                <Eye className="w-3.5 h-3.5 shrink-0" />
-                <span className="text-[10px] sm:text-[11px] whitespace-nowrap">Reader</span>
-                {isExamActive && effectiveMode === 'accessible' && (
-                  <span className="absolute -top-1 w-1.5 h-1.5 rounded-full bg-amber-400 ring-2 ring-slate-900" />
-                )}
-              </button>
-            </div>
-
-            {/* 3. Remaining Main Tabs */}
+            {/* 2. All Remaining Exam Tabs */}
             {navItems.slice(1).map((item) => {
               const Icon = item.icon;
               const isActive = activeTab === item.id;
